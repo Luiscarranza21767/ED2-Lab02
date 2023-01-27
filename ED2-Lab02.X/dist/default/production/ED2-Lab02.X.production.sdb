@@ -31,13 +31,13 @@
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
 "9 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
 [v _configpuertos configpuertos `(v  1 e 1 0 ]
-"15 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+"12 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
 [v _inttochar inttochar `(uc  1 e 1 0 ]
-"48
+"45
 [v _descomponer descomponer `(uc  1 e 1 0 ]
-"68
+"65
 [v _chartoint chartoint `(i  1 e 2 0 ]
-"113
+"110
 [v _mapeo mapeo `(ui  1 e 2 0 ]
 "13 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
 [v _Lcd_Port Lcd_Port `(v  1 e 1 0 ]
@@ -60,9 +60,9 @@
 "10 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
 [v _setupINTOSC setupINTOSC `(v  1 e 1 0 ]
 "11 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-[v _setup_ADC setup_ADC `(v  1 e 1 0 ]
+[v _ADC_config ADC_config `(v  1 e 1 0 ]
 "44
-[v _iniciarADC iniciarADC `(v  1 e 1 0 ]
+[v _ADC_read ADC_read `(v  1 e 1 0 ]
 [s S284 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
@@ -273,12 +273,6 @@
 {
 "124
 } 0
-"11 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-[v _setup_ADC setup_ADC `(v  1 e 1 0 ]
-{
-[v setup_ADC@chan chan `i  1 p 2 6 ]
-"43
-} 0
 "10 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
 [v _setupINTOSC setupINTOSC `(v  1 e 1 0 ]
 {
@@ -287,21 +281,21 @@
 [v setupINTOSC@IRCF IRCF `uc  1 a 1 6 ]
 "37
 } 0
-"113 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+"110 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
 [v _mapeo mapeo `(ui  1 e 2 0 ]
 {
 [v mapeo@valor valor `uc  1 a 1 wreg ]
-"114
+"111
 [v mapeo@resultado resultado `ui  1 a 2 43 ]
-"113
+"110
 [v mapeo@valor valor `uc  1 a 1 wreg ]
 [v mapeo@inmin inmin `uc  1 p 1 34 ]
 [v mapeo@inmax inmax `uc  1 p 1 35 ]
 [v mapeo@outmin outmin `uc  1 p 1 36 ]
 [v mapeo@outmax outmax `ui  1 p 2 37 ]
-"115
+"112
 [v mapeo@valor valor `uc  1 a 1 45 ]
-"117
+"114
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
@@ -326,33 +320,27 @@
 [v ___aldiv@dividend dividend `l  1 p 4 23 ]
 "41
 } 0
-"15 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+"12 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
 [v _inttochar inttochar `(uc  1 e 1 0 ]
 {
 [v inttochar@num num `uc  1 a 1 wreg ]
 [v inttochar@num num `uc  1 a 1 wreg ]
 [v inttochar@num num `uc  1 a 1 6 ]
-"46
+"43
 } 0
-"44 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-[v _iniciarADC iniciarADC `(v  1 e 1 0 ]
-{
-[v iniciarADC@channel channel `i  1 p 2 6 ]
-"60
-} 0
-"48 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+"45
 [v _descomponer descomponer `(uc  1 e 1 0 ]
 {
-"50
+"47
 [v descomponer@dec dec `uc  1 a 1 23 ]
-"51
-[v descomponer@uni uni `uc  1 a 1 22 ]
-"49
-[v descomponer@cent cent `uc  1 a 1 21 ]
 "48
+[v descomponer@uni uni `uc  1 a 1 22 ]
+"46
+[v descomponer@cent cent `uc  1 a 1 21 ]
+"45
 [v descomponer@pos pos `i  1 p 2 15 ]
 [v descomponer@num num `ui  1 p 2 17 ]
-"65
+"62
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
@@ -480,6 +468,18 @@
 [v Lcd_Port@a a `uc  1 a 1 wreg ]
 [v Lcd_Port@a a `uc  1 a 1 6 ]
 "33
+} 0
+"44 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+[v _ADC_read ADC_read `(v  1 e 1 0 ]
+{
+[v ADC_read@channel channel `i  1 p 2 6 ]
+"60
+} 0
+"11
+[v _ADC_config ADC_config `(v  1 e 1 0 ]
+{
+[v ADC_config@channel channel `i  1 p 2 6 ]
+"43
 } 0
 "55 D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
 [v _isr isr `II(v  1 e 1 0 ]

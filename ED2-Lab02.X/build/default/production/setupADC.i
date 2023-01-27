@@ -2643,25 +2643,25 @@ extern __bank0 __bit __timeout;
 
 
 
-void setup_ADC(int chan);
-void iniciarADC(int channel);
+void ADC_config(int channel);
+void ADC_read(int channel);
 # 8 "setupADC.c" 2
 
 
 
-void setup_ADC(int chan){
-    if((chan & 0x01) == 1){
+void ADC_config(int channel){
+    if((channel & 0x01) == 1){
         PORTAbits.RA0 = 0;
         TRISAbits.TRISA0 = 1;
         ANSELbits.ANS0 = 1;
     }
-    if((chan & 0x02) == 0x02){
+    if((channel & 0x02) == 0x02){
         PORTAbits.RA1 = 0;
         TRISAbits.TRISA1 = 1;
         ANSELbits.ANS1 = 1;
 
     }
-    if((chan & 0x04) == 0x4){
+    if((channel & 0x04) == 0x4){
         PORTAbits.RA2 = 0;
         TRISAbits.TRISA2 = 1;
         ANSELbits.ANS2 = 1;
@@ -2682,7 +2682,7 @@ void setup_ADC(int chan){
     ADCON0bits.ADON = 1;
     _delay((unsigned long)((100)*(4000000/4000000.0)));
 }
-void iniciarADC(int channel){
+void ADC_read(int channel){
     if(channel ==0){
         ADCON0bits.CHS = 0b0000;
         _delay((unsigned long)((100)*(4000000/4000000.0)));

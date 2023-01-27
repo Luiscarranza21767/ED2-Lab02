@@ -342,15 +342,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f887.h: 3547: __asm("EECON2 equ 018Dh");
 [; <" EECON2 equ 018Dh ;# ">
 "11 setupADC.c
-[; ;setupADC.c: 11: void setup_ADC(int chan){
-[v _setup_ADC `(v ~T0 @X0 1 ef1`i ]
+[; ;setupADC.c: 11: void ADC_config(int channel){
+[v _ADC_config `(v ~T0 @X0 1 ef1`i ]
 {
-[e :U _setup_ADC ]
-[v _chan `i ~T0 @X0 1 r1 ]
+[e :U _ADC_config ]
+[v _channel `i ~T0 @X0 1 r1 ]
 [f ]
 "12
-[; ;setupADC.c: 12:     if((chan & 0x01) == 1){
-[e $ ! == & _chan -> 1 `i -> 1 `i 139  ]
+[; ;setupADC.c: 12:     if((channel & 0x01) == 1){
+[e $ ! == & _channel -> 1 `i -> 1 `i 139  ]
 {
 "13
 [; ;setupADC.c: 13:         PORTAbits.RA0 = 0;
@@ -366,8 +366,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 139 ]
 "17
-[; ;setupADC.c: 17:     if((chan & 0x02) == 0x02){
-[e $ ! == & _chan -> 2 `i -> 2 `i 140  ]
+[; ;setupADC.c: 17:     if((channel & 0x02) == 0x02){
+[e $ ! == & _channel -> 2 `i -> 2 `i 140  ]
 {
 "18
 [; ;setupADC.c: 18:         PORTAbits.RA1 = 0;
@@ -383,8 +383,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e :U 140 ]
 "23
-[; ;setupADC.c: 23:     if((chan & 0x04) == 0x4){
-[e $ ! == & _chan -> 4 `i -> 4 `i 141  ]
+[; ;setupADC.c: 23:     if((channel & 0x04) == 0x4){
+[e $ ! == & _channel -> 4 `i -> 4 `i 141  ]
 {
 "24
 [; ;setupADC.c: 24:         PORTAbits.RA2 = 0;
@@ -434,10 +434,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 138 ]
 }
 "44
-[; ;setupADC.c: 44: void iniciarADC(int channel){
-[v _iniciarADC `(v ~T0 @X0 1 ef1`i ]
+[; ;setupADC.c: 44: void ADC_read(int channel){
+[v _ADC_read `(v ~T0 @X0 1 ef1`i ]
 {
-[e :U _iniciarADC ]
+[e :U _ADC_read ]
 [v _channel `i ~T0 @X0 1 r1 ]
 [f ]
 "45

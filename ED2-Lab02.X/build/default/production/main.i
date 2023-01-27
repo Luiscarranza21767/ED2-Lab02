@@ -2701,8 +2701,8 @@ void setupINTOSC(uint8_t IRCF);
 
 
 
-void setup_ADC(int chan);
-void iniciarADC(int channel);
+void ADC_config(int channel);
+void ADC_read(int channel);
 # 41 "main.c" 2
 
 # 1 "./confpuertos.h" 1
@@ -2764,7 +2764,7 @@ void __attribute__((picinterrupt(("")))) isr (void){
 void main(void) {
     setupINTOSC(6);
     configpuertos();
-    setup_ADC(0x03);
+    ADC_config(0x03);
     Lcd_Init();
     Lcd_Clear();
     Lcd_Set_Cursor(1,2);
@@ -2772,7 +2772,7 @@ void main(void) {
 
     while(1){
 
-        iniciarADC(0);
+        ADC_read(0);
         valADC0 = mapeo(lecADC0, 0, 255, 0, 500);
         unidades = inttochar(descomponer(2, valADC0));
         Lcd_Set_Cursor(2,1);
@@ -2789,7 +2789,7 @@ void main(void) {
         Lcd_Write_Char('V');
 
 
-        iniciarADC(1);
+        ADC_read(1);
         valADC1 = mapeo(lecADC1, 0, 255, 0, 500);
         unidades = inttochar(descomponer(2, valADC1));
         Lcd_Set_Cursor(2,7);

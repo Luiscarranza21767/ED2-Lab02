@@ -9,9 +9,6 @@
 
 //Funcion para mover dos posiciones decimales
 
-int dectoint(int val){
-    return (val*100);
-}
 char inttochar(uint8_t num){
     if(num == 0){
         return '0';

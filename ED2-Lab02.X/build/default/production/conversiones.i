@@ -2651,9 +2651,6 @@ uint16_t mapeo(uint8_t valor, uint8_t inmin, uint8_t inmax, uint8_t outmin, uint
 
 
 
-int dectoint(int val){
-    return (val*100);
-}
 char inttochar(uint8_t num){
     if(num == 0){
         return '0';

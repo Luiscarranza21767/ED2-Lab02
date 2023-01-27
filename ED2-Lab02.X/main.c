@@ -78,7 +78,7 @@ void __interrupt() isr (void){
 void main(void) {
     setupINTOSC(6);
     configpuertos();
-    setup_ADC(0x03); //0x03 = 0b00000011 -> AN0 y AN1 son analógicos
+    ADC_config(0x03); //0x03 = 0b00000011 -> AN0 y AN1 son analógicos
     Lcd_Init();
     Lcd_Clear();
     Lcd_Set_Cursor(1,2);
@@ -86,7 +86,7 @@ void main(void) {
     
     while(1){
         // Mostrar el valor del primer pot
-        iniciarADC(0);
+        ADC_read(0);
         valADC0 = mapeo(lecADC0, 0, 255, 0, 500);
         unidades = inttochar(descomponer(2, valADC0));
         Lcd_Set_Cursor(2,1);
@@ -103,7 +103,7 @@ void main(void) {
         Lcd_Write_Char('V');
         
         //Mostrar el valor del segundo pot
-        iniciarADC(1);
+        ADC_read(1);
         valADC1 = mapeo(lecADC1, 0, 255, 0, 500);
         unidades = inttochar(descomponer(2, valADC1));
         Lcd_Set_Cursor(2,7);
