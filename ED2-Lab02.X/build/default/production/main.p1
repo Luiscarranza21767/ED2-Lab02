@@ -77,17 +77,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20 ./setupADC.h
 [; ;./setupADC.h: 20: void ADC_config(int channel);
 [v _ADC_config `(v ~T0 @X0 0 ef1`i ]
-"55 ./LCD.h
-[; ;./LCD.h: 55: void Lcd_Init(void);
+"71 ./LCD.h
+[; ;./LCD.h: 71: void Lcd_Init(void);
 [v _Lcd_Init `(v ~T0 @X0 0 ef ]
-"51
-[; ;./LCD.h: 51: void Lcd_Clear(void);
+"67
+[; ;./LCD.h: 67: void Lcd_Clear(void);
 [v _Lcd_Clear `(v ~T0 @X0 0 ef ]
-"53
-[; ;./LCD.h: 53: void Lcd_Set_Cursor(char a, char b);
+"69
+[; ;./LCD.h: 69: void Lcd_Set_Cursor(char a, char b);
 [v _Lcd_Set_Cursor `(v ~T0 @X0 0 ef2`uc`uc ]
-"59
-[; ;./LCD.h: 59: void Lcd_Write_String(char *a);
+"75
+[; ;./LCD.h: 75: void Lcd_Write_String(char *a);
 [v _Lcd_Write_String `(v ~T0 @X0 0 ef1`*uc ]
 "21 ./setupADC.h
 [; ;./setupADC.h: 21: void ADC_read(int channel);
@@ -101,8 +101,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "14
 [; ;./conversiones.h: 14: uint8_t descomponer(int pos, uint16_t num);
 [v _descomponer `(uc ~T0 @X0 0 ef2`i`ui ]
-"57 ./LCD.h
-[; ;./LCD.h: 57: void Lcd_Write_Char(char a);
+"73 ./LCD.h
+[; ;./LCD.h: 73: void Lcd_Write_Char(char a);
 [v _Lcd_Write_Char `(v ~T0 @X0 0 ef1`uc ]
 "11 main.c
 [p x FOSC  =  INTRC_NOCLKOUT  ]
@@ -497,104 +497,104 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 87:     while(1){
 [e :U 148 ]
 {
-"89
-[; ;main.c: 89:         ADC_read(0);
-[e ( _ADC_read (1 -> 0 `i ]
 "90
-[; ;main.c: 90:         valADC0 = mapeo(lecADC0, 0, 255, 0, 500);
-[e = _valADC0 ( _mapeo (4 , , , , -> _lecADC0 `uc -> -> 0 `i `uc -> -> 255 `i `uc -> -> 0 `i `uc -> -> 500 `i `ui ]
+[; ;main.c: 90:         ADC_read(0);
+[e ( _ADC_read (1 -> 0 `i ]
 "91
-[; ;main.c: 91:         unidades = inttochar(descomponer(2, valADC0));
-[e = _unidades ( _inttochar (1 ( _descomponer (2 , -> 2 `i _valADC0 ]
+[; ;main.c: 91:         valADC0 = mapeo(lecADC0, 0, 255, 0, 500);
+[e = _valADC0 ( _mapeo (4 , , , , -> _lecADC0 `uc -> -> 0 `i `uc -> -> 255 `i `uc -> -> 0 `i `uc -> -> 500 `i `ui ]
 "92
-[; ;main.c: 92:         Lcd_Set_Cursor(2,1);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 92:         unidades = inttochar(descomponer(2, valADC0));
+[e = _unidades ( _inttochar (1 ( _descomponer (2 , -> 2 `i _valADC0 ]
 "93
-[; ;main.c: 93:         Lcd_Write_Char(unidades);
-[e ( _Lcd_Write_Char (1 _unidades ]
+[; ;main.c: 93:         Lcd_Set_Cursor(2,1);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
 "94
-[; ;main.c: 94:         Lcd_Set_Cursor(2,2);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 2 `i `uc ]
-"95
-[; ;main.c: 95:         Lcd_Write_Char('.');
-[e ( _Lcd_Write_Char (1 -> -> 46 `ui `uc ]
-"96
-[; ;main.c: 96:         decimas = inttochar(descomponer(1, valADC0));
-[e = _decimas ( _inttochar (1 ( _descomponer (2 , -> 1 `i _valADC0 ]
-"97
-[; ;main.c: 97:         Lcd_Set_Cursor(2,3);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 3 `i `uc ]
-"98
-[; ;main.c: 98:         Lcd_Write_Char(decimas);
-[e ( _Lcd_Write_Char (1 _decimas ]
-"99
-[; ;main.c: 99:         centesimas = inttochar(descomponer(0, valADC0));
-[e = _centesimas ( _inttochar (1 ( _descomponer (2 , -> 0 `i _valADC0 ]
-"100
-[; ;main.c: 100:         Lcd_Set_Cursor(2,4);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 4 `i `uc ]
-"101
-[; ;main.c: 101:         Lcd_Write_Char(centesimas);
-[e ( _Lcd_Write_Char (1 _centesimas ]
-"102
-[; ;main.c: 102:         Lcd_Set_Cursor(2,5);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 5 `i `uc ]
-"103
-[; ;main.c: 103:         Lcd_Write_Char('V');
-[e ( _Lcd_Write_Char (1 -> -> 86 `ui `uc ]
-"106
-[; ;main.c: 106:         ADC_read(1);
-[e ( _ADC_read (1 -> 1 `i ]
-"107
-[; ;main.c: 107:         valADC1 = mapeo(lecADC1, 0, 255, 0, 500);
-[e = _valADC1 ( _mapeo (4 , , , , -> _lecADC1 `uc -> -> 0 `i `uc -> -> 255 `i `uc -> -> 0 `i `uc -> -> 500 `i `ui ]
-"108
-[; ;main.c: 108:         unidades = inttochar(descomponer(2, valADC1));
-[e = _unidades ( _inttochar (1 ( _descomponer (2 , -> 2 `i _valADC1 ]
-"109
-[; ;main.c: 109:         Lcd_Set_Cursor(2,7);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 7 `i `uc ]
-"110
-[; ;main.c: 110:         Lcd_Write_Char(unidades);
+[; ;main.c: 94:         Lcd_Write_Char(unidades);
 [e ( _Lcd_Write_Char (1 _unidades ]
-"111
-[; ;main.c: 111:         Lcd_Set_Cursor(2,8);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 8 `i `uc ]
-"112
-[; ;main.c: 112:         Lcd_Write_Char('.');
+"95
+[; ;main.c: 95:         Lcd_Set_Cursor(2,2);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 2 `i `uc ]
+"96
+[; ;main.c: 96:         Lcd_Write_Char('.');
 [e ( _Lcd_Write_Char (1 -> -> 46 `ui `uc ]
-"113
-[; ;main.c: 113:         decimas = inttochar(descomponer(1, valADC1));
-[e = _decimas ( _inttochar (1 ( _descomponer (2 , -> 1 `i _valADC1 ]
-"114
-[; ;main.c: 114:         Lcd_Set_Cursor(2,9);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 9 `i `uc ]
-"115
-[; ;main.c: 115:         Lcd_Write_Char(decimas);
+"97
+[; ;main.c: 97:         decimas = inttochar(descomponer(1, valADC0));
+[e = _decimas ( _inttochar (1 ( _descomponer (2 , -> 1 `i _valADC0 ]
+"98
+[; ;main.c: 98:         Lcd_Set_Cursor(2,3);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 3 `i `uc ]
+"99
+[; ;main.c: 99:         Lcd_Write_Char(decimas);
 [e ( _Lcd_Write_Char (1 _decimas ]
-"116
-[; ;main.c: 116:         centesimas = inttochar(descomponer(0, valADC1));
-[e = _centesimas ( _inttochar (1 ( _descomponer (2 , -> 0 `i _valADC1 ]
-"117
-[; ;main.c: 117:         Lcd_Set_Cursor(2,10);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 10 `i `uc ]
-"118
-[; ;main.c: 118:         Lcd_Write_Char(centesimas);
+"100
+[; ;main.c: 100:         centesimas = inttochar(descomponer(0, valADC0));
+[e = _centesimas ( _inttochar (1 ( _descomponer (2 , -> 0 `i _valADC0 ]
+"101
+[; ;main.c: 101:         Lcd_Set_Cursor(2,4);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 4 `i `uc ]
+"102
+[; ;main.c: 102:         Lcd_Write_Char(centesimas);
 [e ( _Lcd_Write_Char (1 _centesimas ]
-"119
-[; ;main.c: 119:         Lcd_Set_Cursor(2,11);
-[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 11 `i `uc ]
-"120
-[; ;main.c: 120:         Lcd_Write_Char('V');
+"103
+[; ;main.c: 103:         Lcd_Set_Cursor(2,5);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 5 `i `uc ]
+"104
+[; ;main.c: 104:         Lcd_Write_Char('V');
 [e ( _Lcd_Write_Char (1 -> -> 86 `ui `uc ]
-"123
-[; ;main.c: 123:     }
+"107
+[; ;main.c: 107:         ADC_read(1);
+[e ( _ADC_read (1 -> 1 `i ]
+"108
+[; ;main.c: 108:         valADC1 = mapeo(lecADC1, 0, 255, 0, 500);
+[e = _valADC1 ( _mapeo (4 , , , , -> _lecADC1 `uc -> -> 0 `i `uc -> -> 255 `i `uc -> -> 0 `i `uc -> -> 500 `i `ui ]
+"109
+[; ;main.c: 109:         unidades = inttochar(descomponer(2, valADC1));
+[e = _unidades ( _inttochar (1 ( _descomponer (2 , -> 2 `i _valADC1 ]
+"110
+[; ;main.c: 110:         Lcd_Set_Cursor(2,7);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 7 `i `uc ]
+"111
+[; ;main.c: 111:         Lcd_Write_Char(unidades);
+[e ( _Lcd_Write_Char (1 _unidades ]
+"112
+[; ;main.c: 112:         Lcd_Set_Cursor(2,8);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 8 `i `uc ]
+"113
+[; ;main.c: 113:         Lcd_Write_Char('.');
+[e ( _Lcd_Write_Char (1 -> -> 46 `ui `uc ]
+"114
+[; ;main.c: 114:         decimas = inttochar(descomponer(1, valADC1));
+[e = _decimas ( _inttochar (1 ( _descomponer (2 , -> 1 `i _valADC1 ]
+"115
+[; ;main.c: 115:         Lcd_Set_Cursor(2,9);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 9 `i `uc ]
+"116
+[; ;main.c: 116:         Lcd_Write_Char(decimas);
+[e ( _Lcd_Write_Char (1 _decimas ]
+"117
+[; ;main.c: 117:         centesimas = inttochar(descomponer(0, valADC1));
+[e = _centesimas ( _inttochar (1 ( _descomponer (2 , -> 0 `i _valADC1 ]
+"118
+[; ;main.c: 118:         Lcd_Set_Cursor(2,10);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 10 `i `uc ]
+"119
+[; ;main.c: 119:         Lcd_Write_Char(centesimas);
+[e ( _Lcd_Write_Char (1 _centesimas ]
+"120
+[; ;main.c: 120:         Lcd_Set_Cursor(2,11);
+[e ( _Lcd_Set_Cursor (2 , -> -> 2 `i `uc -> -> 11 `i `uc ]
+"121
+[; ;main.c: 121:         Lcd_Write_Char('V');
+[e ( _Lcd_Write_Char (1 -> -> 86 `ui `uc ]
+"124
+[; ;main.c: 124:     }
 }
 [e :U 147 ]
 [e $U 148  ]
 [e :U 149 ]
-"124
-[; ;main.c: 124: }
+"125
+[; ;main.c: 125: }
 [e :UE 146 ]
 }
 [a 1C 83 49 58 32 32 32 83 50 58 32 32 83 51 58 0 ]

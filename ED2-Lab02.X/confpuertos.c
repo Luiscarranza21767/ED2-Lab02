@@ -21,7 +21,9 @@ void configpuertos(void){
     
     TRISD = 0;
     PORTD = 0;
-    TRISC = 0;
-    PORTC = 0;
+    TRISCbits.TRISC0 = 0;
+    TRISCbits.TRISC1 = 0;
+    PORTCbits.RC0 = 0;
+    PORTCbits.RC1 = 0;
     
 }

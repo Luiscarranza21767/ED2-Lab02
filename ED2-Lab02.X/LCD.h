@@ -16,11 +16,27 @@
 #endif
 
 #ifndef RS
-#define RS PORTDbits.RD2
+#define RS PORTCbits.RC1
 #endif
 
 #ifndef EN
-#define EN RD3
+#define EN RC0
+#endif
+
+#ifndef D0
+#define D0 PORTDbits.RD0
+#endif
+
+#ifndef D1
+#define D1 RD1
+#endif
+
+#ifndef D2
+#define D2 RD2
+#endif
+
+#ifndef D3
+#define D3 RD3
 #endif
 
 #ifndef D4

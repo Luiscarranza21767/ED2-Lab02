@@ -85,6 +85,7 @@ void main(void) {
     Lcd_Write_String("S1:   S2:  S3:"); 
     
     while(1){
+        
         // Mostrar el valor del primer pot
         ADC_read(0);
         valADC0 = mapeo(lecADC0, 0, 255, 0, 500);

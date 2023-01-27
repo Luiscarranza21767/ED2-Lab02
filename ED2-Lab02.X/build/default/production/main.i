@@ -2658,7 +2658,7 @@ extern __bank0 __bit __timeout;
 
 
 # 1 "./LCD.h" 1
-# 47 "./LCD.h"
+# 63 "./LCD.h"
 void Lcd_Port(char a);
 
 void Lcd_Cmd(char a);
@@ -2771,6 +2771,7 @@ void main(void) {
     Lcd_Write_String("S1:   S2:  S3:");
 
     while(1){
+
 
         ADC_read(0);
         valADC0 = mapeo(lecADC0, 0, 255, 0, 500);
