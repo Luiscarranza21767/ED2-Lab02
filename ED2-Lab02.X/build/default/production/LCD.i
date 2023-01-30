@@ -9,7 +9,7 @@
 # 1 "LCD.c" 2
 # 11 "LCD.c"
 # 1 "./LCD.h" 1
-# 58 "./LCD.h"
+# 13 "./LCD.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2627,12 +2627,8 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 2 3
-# 58 "./LCD.h" 2
-
-
-
-
-
+# 13 "./LCD.h" 2
+# 64 "./LCD.h"
 void Lcd_Port(char a);
 
 void Lcd_Cmd(char a);
@@ -2696,11 +2692,11 @@ void Lcd_Port(char a) {
 }
 
 void Lcd_Cmd(char a) {
-    PORTCbits.RC1 = 0;
+    PORTBbits.RB0 = 0;
     Lcd_Port(a);
-    RC0 = 1;
-    _delay((unsigned long)((4)*(4000000/4000.0)));
-    RC0 = 0;
+    RB1 = 1;
+    _delay((unsigned long)((4)*(1000000/4000.0)));
+    RB1 = 0;
 }
 
 void Lcd_Clear(void) {
@@ -2728,20 +2724,20 @@ void Lcd_Set_Cursor(char a, char b) {
 
 void Lcd_Init(void) {
     Lcd_Port(0x00);
-    _delay((unsigned long)((110)*(4000000/4000.0)));
+    _delay((unsigned long)((110)*(1000000/4000.0)));
     Lcd_Cmd(0x30);
-    _delay((unsigned long)((5)*(4000000/4000.0)));
+    _delay((unsigned long)((5)*(1000000/4000.0)));
     Lcd_Cmd(0x30);
-    _delay((unsigned long)((20)*(4000000/4000000.0)));
+    _delay((unsigned long)((20)*(1000000/4000000.0)));
     Lcd_Cmd(0x30);
-    _delay((unsigned long)((20)*(4000000/4000000.0)));
+    _delay((unsigned long)((20)*(1000000/4000000.0)));
 
     Lcd_Cmd(0x38);
-    _delay((unsigned long)((55)*(4000000/4000000.0)));
+    _delay((unsigned long)((55)*(1000000/4000000.0)));
     Lcd_Cmd(0x08);
-    _delay((unsigned long)((55)*(4000000/4000000.0)));
+    _delay((unsigned long)((55)*(1000000/4000000.0)));
     Lcd_Cmd(0x01);
-    _delay((unsigned long)((55)*(4000000/4000000.0)));
+    _delay((unsigned long)((55)*(1000000/4000000.0)));
     Lcd_Cmd(0x06);
     Lcd_Cmd(0x0C);
 }
@@ -2750,11 +2746,11 @@ void Lcd_Write_Char(char a) {
 
 
 
-    PORTCbits.RC1 = 1;
+    PORTBbits.RB0 = 1;
     Lcd_Port(a);
-    RC0 = 1;
-    _delay((unsigned long)((40)*(4000000/4000000.0)));
-    RC0 = 0;
+    RB1 = 1;
+    _delay((unsigned long)((40)*(1000000/4000000.0)));
+    RB1 = 0;
 }
 
 void Lcd_Write_String(char *a) {

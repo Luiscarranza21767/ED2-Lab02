@@ -14,37 +14,40 @@
 $dist/default/production\ED2-Lab02.X.production.o
 cinit CODE 0 11 11 15 2 1
 idloc IDLOC 5 2000 2000 4 2 1
-text1 CODE 0 474 474 68 2 1
-text2 CODE 0 68C 68C 47 2 1
-text3 CODE 0 644 644 48 2 1
-text4 CODE 0 286 286 9D 2 1
-text5 CODE 0 5F2 5F2 52 2 1
-text6 CODE 0 4DC 4DC 63 2 1
-text7 CODE 0 797 797 3C 2 1
-text8 CODE 0 6D3 6D3 46 2 1
-text9 CODE 0 53F 53F 5B 2 1
-text10 CODE 0 40B 40B 69 2 1
-text11 CODE 0 F83 F83 1F 2 1
-text12 CODE 0 323 323 78 2 1
-text13 CODE 0 7D3 7D3 29 2 1
-text14 CODE 0 F4F F4F 18 2 1
-text15 CODE 0 FA2 FA2 22 2 1
-text16 CODE 0 39B 39B 70 2 1
-text17 CODE 0 F48 F48 7 2 1
-text18 CODE 0 F67 F67 1C 2 1
-text19 CODE 0 FC4 FC4 3C 2 1
-text20 CODE 0 759 759 3E 2 1
-text21 CODE 0 719 719 40 2 1
-text22 CODE 0 59A 59A 58 2 1
-text23 CODE 0 1CE 1CE B8 2 1
-maintext CODE 0 26 26 1A8 2 1
+text1 CODE 0 495 495 68 2 1
+text2 CODE 0 774 774 47 2 1
+text3 CODE 0 72C 72C 48 2 1
+text4 CODE 0 317 317 9D 2 1
+text5 CODE 0 6DA 6DA 52 2 1
+text6 CODE 0 561 561 63 2 1
+text7 CODE 0 F40 F40 3C 2 1
+text8 CODE 0 FBA FBA 46 2 1
+text9 CODE 0 627 627 5B 2 1
+text10 CODE 0 42C 42C 69 2 1
+text11 CODE 0 E84 E84 1A 2 1
+text12 CODE 0 3B4 3B4 78 2 1
+text13 CODE 0 682 682 58 2 1
+text14 CODE 0 E9E E9E 1B 2 1
+text15 CODE 0 EDB EDB 29 2 1
+text16 CODE 0 E53 E53 18 2 1
+text17 CODE 0 EB9 EB9 22 2 1
+text18 CODE 0 4FD 4FD 64 2 1
+text19 CODE 0 E4C E4C 7 2 1
+text20 CODE 0 E6B E6B 19 2 1
+text21 CODE 0 F04 F04 3C 2 1
+text22 CODE 0 F7C F7C 3E 2 1
+text23 CODE 0 7BB 7BB 40 2 1
+text24 CODE 0 5C4 5C4 63 2 1
+text25 CODE 0 25F 25F B8 2 1
+text26 CODE 0 7FB 7FB 4 2 1
+maintext CODE 0 26 26 239 2 1
 cstackCOMMON COMMON 1 70 70 E 1 1
-cstackBANK0 BANK0 1 20 20 2E 1 1
+cstackBANK0 BANK0 1 20 20 30 1 1
 intentry CODE 0 4 4 A 2 1
-bssBANK0 BANK0 1 4E 4E F 1 1
-strings STRING 0 800 800 15 2 1
+bssBANK0 BANK0 1 50 50 F 1 1
+strings STRING 0 800 800 16 2 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
+$C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 E E 3 2 1
@@ -55,25 +58,25 @@ config CONFIG 4 2007 2007 2 2 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 5D-6F 1
+RAM 5F-6F 1
 RAM A0-EF 1
 RAM 110-16F 1
 RAM 190-1EF 1
-BANK0 5D-6F 1
+BANK0 5F-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
 CONST 3-3 2
-CONST 7FC-7FF 2
-CONST 815-F47 2
+CONST 7FF-7FF 2
+CONST 816-E4B 2
 CONST 1000-1FFF 2
 ENTRY 3-3 2
-ENTRY 7FC-7FF 2
-ENTRY 815-F47 2
+ENTRY 7FF-7FF 2
+ENTRY 816-E4B 2
 ENTRY 1000-1FFF 2
 CODE 3-3 2
-CODE 7FC-7FF 2
-CODE 815-F47 2
+CODE 7FF-7FF 2
+CODE 816-E4B 2
 CODE 1000-1FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -81,12 +84,12 @@ SFR2 100-10F 1
 SFR3 180-18F 1
 EEDATA 2100-21FF 2
 STRCODE 3-3 2
-STRCODE 7FC-7FF 2
-STRCODE 815-F47 2
+STRCODE 7FF-7FF 2
+STRCODE 816-E4B 2
 STRCODE 1000-1FFF 2
 STRING 3-3 2
-STRING 7FC-7FF 2
-STRING 815-F47 2
+STRING 7FF-7FF 2
+STRING 816-E4B 2
 STRING 1000-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -102,546 +105,601 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\ED2-Lab02.X.production.o
-11 cinit CODE >1339:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-11 cinit CODE >1342:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-11 cinit CODE >1374:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-12 cinit CODE >1375:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-13 cinit CODE >1376:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-14 cinit CODE >1377:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-15 cinit CODE >1378:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-16 cinit CODE >1379:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-17 cinit CODE >1380:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-18 cinit CODE >1381:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-19 cinit CODE >1382:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-1A cinit CODE >1383:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-1B cinit CODE >1384:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-1C cinit CODE >1385:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-1D cinit CODE >1386:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-1E cinit CODE >1387:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-1F cinit CODE >1388:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-20 cinit CODE >1389:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-21 cinit CODE >1390:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-22 cinit CODE >1396:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-22 cinit CODE >1398:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-23 cinit CODE >1399:C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.s
-4 intentry CODE >55:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-1CE text23 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1CF text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1D8 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1E1 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1E3 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1E5 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1E7 text23 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1E8 text23 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1F0 text23 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1F0 text23 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1F4 text23 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-1F8 text23 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-201 text23 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-203 text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-204 text23 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-208 text23 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-209 text23 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-20F text23 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-211 text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-218 text23 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-21C text23 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-21F text23 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-223 text23 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-227 text23 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-22A text23 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-22B text23 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-231 text23 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-233 text23 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-233 text23 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-23A text23 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-23C text23 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-23E text23 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-245 text23 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-24B text23 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-24F text23 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-253 text23 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-25B text23 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-25D text23 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-263 text23 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-269 text23 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-273 text23 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-27C text23 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-27D text23 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-285 text23 CODE >44:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
-59A text22 CODE >55:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-59A text22 CODE >57:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-59E text22 CODE >58:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5A2 text22 CODE >59:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5A6 text22 CODE >61:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5AA text22 CODE >62:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5AE text22 CODE >64:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5AF text22 CODE >67:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5B3 text22 CODE >68:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5B8 text22 CODE >68:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5BC text22 CODE >69:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5D9 text22 CODE >70:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5DA text22 CODE >71:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5DF text22 CODE >71:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5E3 text22 CODE >72:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5EA text22 CODE >74:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-5EB text22 CODE >77:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-719 text21 CODE >11:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-719 text21 CODE >12:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-71F text21 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-720 text21 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-723 text21 CODE >15:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-726 text21 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-726 text21 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-72C text21 CODE >18:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-72D text21 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-730 text21 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-733 text21 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-733 text21 CODE >23:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-739 text21 CODE >24:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-73A text21 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-73D text21 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-740 text21 CODE >27:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-740 text21 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-741 text21 CODE >30:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-744 text21 CODE >31:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-747 text21 CODE >33:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-748 text21 CODE >34:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-749 text21 CODE >36:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-74C text21 CODE >37:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-74D text21 CODE >39:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-74E text21 CODE >41:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-751 text21 CODE >42:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-758 text21 CODE >43:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-759 text20 CODE >44:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-759 text20 CODE >45:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-761 text20 CODE >46:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-763 text20 CODE >47:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-76A text20 CODE >48:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-76D text20 CODE >50:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-773 text20 CODE >51:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-777 text20 CODE >52:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-77E text20 CODE >53:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-781 text20 CODE >55:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-788 text20 CODE >56:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-78C text20 CODE >57:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-793 text20 CODE >58:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-796 text20 CODE >60:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
-FC4 text19 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FC7 text19 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FCB text19 CODE >15:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FCD text19 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FCD text19 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FCE text19 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FD2 text19 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FD4 text19 CODE >21:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FD4 text19 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FD5 text19 CODE >24:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FD9 text19 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FDB text19 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FDB text19 CODE >27:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FDC text19 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FE0 text19 CODE >30:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FE2 text19 CODE >31:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FE2 text19 CODE >32:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FE3 text19 CODE >34:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FE7 text19 CODE >35:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FE9 text19 CODE >36:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FE9 text19 CODE >37:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FEA text19 CODE >39:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FEE text19 CODE >40:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FF0 text19 CODE >41:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FF0 text19 CODE >42:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FF1 text19 CODE >44:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FF5 text19 CODE >45:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FF7 text19 CODE >46:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FF7 text19 CODE >47:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FF8 text19 CODE >49:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FFC text19 CODE >50:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FFE text19 CODE >51:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FFE text19 CODE >52:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FFF text19 CODE >53:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F67 text18 CODE >55:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F6A text18 CODE >56:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F6B text18 CODE >57:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F71 text18 CODE >58:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F74 text18 CODE >59:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F7F text18 CODE >60:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F82 text18 CODE >61:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F48 text17 CODE >63:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F48 text17 CODE >64:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F4E text17 CODE >65:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-39B text16 CODE >86:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-39B text16 CODE >87:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3A1 text16 CODE >88:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3AC text16 CODE >89:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3B2 text16 CODE >90:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3BD text16 CODE >91:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3C3 text16 CODE >92:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3CA text16 CODE >93:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3D0 text16 CODE >94:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3D7 text16 CODE >96:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3DD text16 CODE >97:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3E4 text16 CODE >98:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3EA text16 CODE >99:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3F1 text16 CODE >100:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3F7 text16 CODE >101:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-3FE text16 CODE >102:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-404 text16 CODE >103:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-40A text16 CODE >104:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FA2 text15 CODE >67:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FA5 text15 CODE >69:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FAA text15 CODE >70:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FAD text15 CODE >75:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FB3 text15 CODE >76:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FBA text15 CODE >77:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FBD text15 CODE >82:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-FC3 text15 CODE >84:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F4F text14 CODE >106:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F52 text14 CODE >110:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F53 text14 CODE >111:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F59 text14 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F5C text14 CODE >113:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F63 text14 CODE >114:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-F66 text14 CODE >115:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-7D3 text13 CODE >117:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-7D6 text13 CODE >119:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-7D9 text13 CODE >120:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-7EA text13 CODE >120:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-7F7 text13 CODE >120:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-7FB text13 CODE >121:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
-323 text12 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-323 text12 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-32E text12 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-337 text12 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-340 text12 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-346 text12 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-34A text12 CODE >50:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-34B text12 CODE >51:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-353 text12 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-355 text12 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-359 text12 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-35C text12 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-361 text12 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-362 text12 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-368 text12 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-36A text12 CODE >58:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-373 text12 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-375 text12 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-37A text12 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-37C text12 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-383 text12 CODE >64:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-385 text12 CODE >62:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-385 text12 CODE >65:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-38A text12 CODE >67:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-38F text12 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-394 text12 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-396 text12 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-398 text12 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-39A text12 CODE >70:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
-F83 text11 CODE >9:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F83 text11 CODE >11:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F87 text11 CODE >12:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F8B text11 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F8C text11 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F8D text11 CODE >15:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F8E text11 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F92 text11 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F94 text11 CODE >18:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F95 text11 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F96 text11 CODE >23:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F99 text11 CODE >24:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F9C text11 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-F9D text11 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-FA0 text11 CODE >27:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-FA1 text11 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
-40B text10 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-40B text10 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-40E text10 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-412 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-415 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-417 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-419 text10 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-41D text10 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-420 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-422 text10 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-426 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-428 text10 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-42E text10 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-430 text10 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-431 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-432 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-436 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-438 text10 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-43C text10 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-440 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-441 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-445 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-447 text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-449 text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-44D text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-451 text10 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-454 text10 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-457 text10 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-458 text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-459 text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-45D text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-45F text10 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-465 text10 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-46A text10 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-46D text10 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-46F text10 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-473 text10 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
-53F text9 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-53F text9 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-542 text9 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-546 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-549 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-54B text9 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-54D text9 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-551 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-554 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-556 text9 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-55C text9 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-55E text9 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-55F text9 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-560 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-564 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-566 text9 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-56A text9 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-56E text9 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-570 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-574 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-578 text9 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-57B text9 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-57E text9 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-57F text9 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-583 text9 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-585 text9 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-58B text9 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-590 text9 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-593 text9 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-595 text9 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-599 text9 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
-6D3 text8 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6D3 text8 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6D7 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6DD text8 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6DF text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6E0 text8 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6E1 text8 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6E5 text8 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6E7 text8 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6EB text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6EF text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6F0 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6F4 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6F6 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6F8 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-6FC text8 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-700 text8 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-703 text8 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-706 text8 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-707 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-708 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-70C text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-70E text8 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-714 text8 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-718 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
-797 text7 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-797 text7 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-79F text7 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7A1 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7A2 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7A3 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7A7 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7A9 text7 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7AD text7 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7B1 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7B3 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7B7 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7BB text7 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7BE text7 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7C1 text7 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7C2 text7 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7C6 text7 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7C8 text7 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7CE text7 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-7D2 text7 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
-4DC text6 CODE >45:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-4DC text6 CODE >49:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-4EF text6 CODE >50:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-500 text6 CODE >51:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-514 text6 CODE >52:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-51B text6 CODE >53:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-51D text6 CODE >55:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-523 text6 CODE >56:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-537 text6 CODE >58:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-53D text6 CODE >59:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-53E text6 CODE >62:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-5F2 text5 CODE >12:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-5F5 text5 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-5FA text5 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-5FC text5 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-601 text5 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-603 text5 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-609 text5 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-60B text5 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-611 text5 CODE >23:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-613 text5 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-619 text5 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-61B text5 CODE >28:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-621 text5 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-623 text5 CODE >31:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-629 text5 CODE >32:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-62B text5 CODE >34:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-631 text5 CODE >35:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-633 text5 CODE >37:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-639 text5 CODE >38:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-63B text5 CODE >40:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-641 text5 CODE >41:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-643 text5 CODE >42:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-643 text5 CODE >43:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-286 text4 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-286 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-289 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-28D text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-292 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-294 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-296 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-298 text4 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-29A text4 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-29A text4 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-29E text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2A3 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2A5 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2A7 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2A9 text4 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2AD text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2B5 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2B9 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2BD text4 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2BF text4 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2C0 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2C2 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2C9 text4 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2CD text4 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2D1 text4 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2D3 text4 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2DA text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2DC text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2E0 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2E4 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2E8 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2EC text4 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2EF text4 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2F3 text4 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2F7 text4 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2FA text4 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2FB text4 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-2FC text4 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-302 text4 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-304 text4 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-30A text4 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-30F text4 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-314 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-316 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-318 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-31A text4 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-322 text4 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
-644 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-644 text3 CODE >119:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-64E text3 CODE >121:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-652 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-655 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-656 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-658 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-65C text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-65D text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-65F text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-663 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-664 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-666 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-669 text3 CODE >123:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-66B text3 CODE >123:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-672 text3 CODE >124:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-673 text3 CODE >124:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-679 text3 CODE >124:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-67B text3 CODE >125:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-67F text3 CODE >125:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-683 text3 CODE >128:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-68B text3 CODE >129:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
-68C text2 CODE >110:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-68F text2 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-6A0 text2 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-6A9 text2 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-6CA text2 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-6CE text2 CODE >113:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-6D2 text2 CODE >114:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
-474 text1 CODE >10:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-477 text1 CODE >11:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-47D text1 CODE >12:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-481 text1 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-481 text1 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-488 text1 CODE >15:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-48E text1 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-48E text1 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-495 text1 CODE >18:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-49B text1 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-49B text1 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4A2 text1 CODE >21:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4A8 text1 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4A8 text1 CODE >23:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4AF text1 CODE >24:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4B5 text1 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4B5 text1 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4BC text1 CODE >27:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4C2 text1 CODE >28:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4C2 text1 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4C8 text1 CODE >30:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4CE text1 CODE >31:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4CE text1 CODE >32:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4D4 text1 CODE >33:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4D8 text1 CODE >36:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-4DB text1 CODE >37:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
-26 maintext CODE >78:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-26 maintext CODE >79:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-2C maintext CODE >80:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-31 maintext CODE >81:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-3C maintext CODE >82:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-41 maintext CODE >83:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-46 maintext CODE >84:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-50 maintext CODE >85:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-56 maintext CODE >90:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-60 maintext CODE >91:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-85 maintext CODE >92:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-9A maintext CODE >93:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-A2 maintext CODE >94:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-AA maintext CODE >95:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-B4 maintext CODE >96:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-BA maintext CODE >97:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-D1 maintext CODE >98:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-D9 maintext CODE >99:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-E1 maintext CODE >100:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-F7 maintext CODE >101:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-FF maintext CODE >102:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-107 maintext CODE >103:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-111 maintext CODE >104:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-117 maintext CODE >107:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-122 maintext CODE >108:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-138 maintext CODE >109:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-14D maintext CODE >110:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-155 maintext CODE >111:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-15D maintext CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-167 maintext CODE >113:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-16D maintext CODE >114:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-184 maintext CODE >115:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-18C maintext CODE >116:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-194 maintext CODE >117:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-1AA maintext CODE >118:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-1B2 maintext CODE >119:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-1BA maintext CODE >120:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
-1C4 maintext CODE >121:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+11 cinit CODE >1510:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+11 cinit CODE >1513:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+11 cinit CODE >1548:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+12 cinit CODE >1549:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+13 cinit CODE >1550:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+14 cinit CODE >1551:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+15 cinit CODE >1552:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+16 cinit CODE >1553:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+17 cinit CODE >1554:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+18 cinit CODE >1555:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+19 cinit CODE >1556:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+1A cinit CODE >1557:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+1B cinit CODE >1558:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+1C cinit CODE >1559:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+1D cinit CODE >1560:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+1E cinit CODE >1561:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+1F cinit CODE >1562:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+20 cinit CODE >1563:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+21 cinit CODE >1564:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+22 cinit CODE >1570:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+22 cinit CODE >1572:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+23 cinit CODE >1573:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+4 intentry CODE >57:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+7FB text26 CODE >72:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+7FB text26 CODE >73:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+7FE text26 CODE >74:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+25F text25 CODE >10:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+260 text25 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+269 text25 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+272 text25 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+274 text25 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+276 text25 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+278 text25 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+279 text25 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+281 text25 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+281 text25 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+285 text25 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+289 text25 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+292 text25 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+294 text25 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+295 text25 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+299 text25 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+29A text25 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2A0 text25 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2A2 text25 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2A9 text25 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2AD text25 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2B0 text25 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2B4 text25 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2B8 text25 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2BB text25 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2BC text25 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2C2 text25 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2C4 text25 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2C4 text25 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2CB text25 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2CD text25 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2CF text25 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2D6 text25 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2DC text25 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2E0 text25 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2E4 text25 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2EC text25 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2EE text25 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2F4 text25 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+2FA text25 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+304 text25 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+30D text25 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+30E text25 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+316 text25 CODE >44:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\xxtofl.c
+5C4 text24 CODE >57:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+5C4 text24 CODE >59:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+5C8 text24 CODE >60:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+5CD text24 CODE >60:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+5D1 text24 CODE >61:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+5EE text24 CODE >62:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+5EF text24 CODE >63:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+5F4 text24 CODE >63:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+5F8 text24 CODE >64:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+5FF text24 CODE >66:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+600 text24 CODE >69:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+604 text24 CODE >70:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+60C text24 CODE >71:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+612 text24 CODE >72:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+615 text24 CODE >73:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+616 text24 CODE >74:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+61C text24 CODE >75:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+61F text24 CODE >78:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+620 text24 CODE >80:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+7BB text23 CODE >11:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7BB text23 CODE >12:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7C1 text23 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7C2 text23 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7C5 text23 CODE >15:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7C8 text23 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7C8 text23 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7CE text23 CODE >18:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7CF text23 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7D2 text23 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7D5 text23 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7D5 text23 CODE >23:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7DB text23 CODE >24:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7DC text23 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7DF text23 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7E2 text23 CODE >27:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7E2 text23 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7E3 text23 CODE >30:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7E6 text23 CODE >31:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7E9 text23 CODE >33:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7EA text23 CODE >34:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7EB text23 CODE >36:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7EE text23 CODE >37:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7EF text23 CODE >39:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7F0 text23 CODE >41:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7F3 text23 CODE >42:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+7FA text23 CODE >43:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+F7C text22 CODE >44:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+F7C text22 CODE >45:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+F84 text22 CODE >46:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+F86 text22 CODE >47:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+F8D text22 CODE >48:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+F90 text22 CODE >50:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+F96 text22 CODE >51:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+F9A text22 CODE >52:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+FA1 text22 CODE >53:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+FA4 text22 CODE >55:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+FAB text22 CODE >56:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+FAF text22 CODE >57:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+FB6 text22 CODE >58:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+FB9 text22 CODE >60:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupADC.c
+F04 text21 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F07 text21 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F0B text21 CODE >15:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F0D text21 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F0D text21 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F0E text21 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F12 text21 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F14 text21 CODE >21:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F14 text21 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F15 text21 CODE >24:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F19 text21 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F1B text21 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F1B text21 CODE >27:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F1C text21 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F20 text21 CODE >30:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F22 text21 CODE >31:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F22 text21 CODE >32:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F23 text21 CODE >34:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F27 text21 CODE >35:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F29 text21 CODE >36:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F29 text21 CODE >37:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F2A text21 CODE >39:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F2E text21 CODE >40:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F30 text21 CODE >41:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F30 text21 CODE >42:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F31 text21 CODE >44:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F35 text21 CODE >45:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F37 text21 CODE >46:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F37 text21 CODE >47:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F38 text21 CODE >49:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F3C text21 CODE >50:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F3E text21 CODE >51:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F3E text21 CODE >52:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F3F text21 CODE >53:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E6B text20 CODE >55:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E6E text20 CODE >56:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E6F text20 CODE >57:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E75 text20 CODE >58:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E78 text20 CODE >59:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E80 text20 CODE >60:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E83 text20 CODE >61:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E4C text19 CODE >63:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E4C text19 CODE >64:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E52 text19 CODE >65:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+4FD text18 CODE >86:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+4FD text18 CODE >87:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+503 text18 CODE >88:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+50D text18 CODE >89:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+513 text18 CODE >90:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+51B text18 CODE >91:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+521 text18 CODE >92:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+524 text18 CODE >93:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+52A text18 CODE >94:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+52D text18 CODE >96:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+533 text18 CODE >97:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+53A text18 CODE >98:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+540 text18 CODE >99:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+547 text18 CODE >100:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+54D text18 CODE >101:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+554 text18 CODE >102:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+55A text18 CODE >103:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+560 text18 CODE >104:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EB9 text17 CODE >67:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EBC text17 CODE >69:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EC1 text17 CODE >70:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EC4 text17 CODE >75:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+ECA text17 CODE >76:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+ED1 text17 CODE >77:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+ED4 text17 CODE >82:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EDA text17 CODE >84:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E53 text16 CODE >106:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E56 text16 CODE >110:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E57 text16 CODE >111:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E5D text16 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E60 text16 CODE >113:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E67 text16 CODE >114:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E6A text16 CODE >115:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EDB text15 CODE >117:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EDE text15 CODE >119:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EE1 text15 CODE >120:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EF2 text15 CODE >120:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+EFF text15 CODE >120:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+F03 text15 CODE >121:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\LCD.c
+E9E text14 CODE >47:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+E9E text14 CODE >48:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+EA3 text14 CODE >48:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+EA9 text14 CODE >49:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+EAD text14 CODE >50:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+EAE text14 CODE >52:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+EB0 text14 CODE >53:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+EB3 text14 CODE >54:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+EB6 text14 CODE >55:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+EB7 text14 CODE >56:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+EB8 text14 CODE >57:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+682 text13 CODE >10:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+685 text13 CODE >12:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+68A text13 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+68D text13 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+690 text13 CODE >15:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+691 text13 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+692 text13 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+697 text13 CODE >18:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+69A text13 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+69D text13 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+69E text13 CODE >21:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+69F text13 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6A5 text13 CODE >23:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6A8 text13 CODE >24:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6AB text13 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6AC text13 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6AD text13 CODE >27:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6B3 text13 CODE >28:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6B6 text13 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6B9 text13 CODE >30:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6BA text13 CODE >31:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6BB text13 CODE >32:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6C1 text13 CODE >33:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6C4 text13 CODE >34:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6C7 text13 CODE >35:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6C8 text13 CODE >36:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6C9 text13 CODE >37:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6CF text13 CODE >38:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6D2 text13 CODE >39:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6D5 text13 CODE >40:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6D7 text13 CODE >41:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6D7 text13 CODE >43:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+6D9 text13 CODE >46:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
+3B4 text12 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3B4 text12 CODE >47:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3BF text12 CODE >48:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3C8 text12 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3D1 text12 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3D7 text12 CODE >49:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3DB text12 CODE >50:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3DC text12 CODE >51:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3E4 text12 CODE >52:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3E6 text12 CODE >53:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3EA text12 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3ED text12 CODE >54:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3F2 text12 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3F3 text12 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3F9 text12 CODE >57:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+3FB text12 CODE >58:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+404 text12 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+406 text12 CODE >60:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+40B text12 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+40D text12 CODE >63:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+414 text12 CODE >64:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+416 text12 CODE >62:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+416 text12 CODE >65:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+41B text12 CODE >67:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+420 text12 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+425 text12 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+427 text12 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+429 text12 CODE >68:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+42B text12 CODE >70:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\fltol.c
+E84 text11 CODE >9:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+E84 text11 CODE >11:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+E88 text11 CODE >12:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+E8C text11 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+E8D text11 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+E90 text11 CODE >18:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+E93 text11 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+E96 text11 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+E9A text11 CODE >21:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+E9D text11 CODE >28:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\confpuertos.c
+42C text10 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+42C text10 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+42F text10 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+433 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+436 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+438 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+43A text10 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+43E text10 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+441 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+443 text10 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+447 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+449 text10 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+44F text10 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+451 text10 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+452 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+453 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+457 text10 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+459 text10 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+45D text10 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+461 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+462 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+466 text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+468 text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+46A text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+46E text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+472 text10 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+475 text10 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+478 text10 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+479 text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+47A text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+47E text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+480 text10 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+486 text10 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+48B text10 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+48E text10 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+490 text10 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+494 text10 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awdiv.c
+627 text9 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+627 text9 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+62A text9 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+62E text9 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+631 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+633 text9 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+635 text9 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+639 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+63C text9 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+63E text9 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+644 text9 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+646 text9 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+647 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+648 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+64C text9 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+64E text9 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+652 text9 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+656 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+658 text9 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+65C text9 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+660 text9 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+663 text9 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+666 text9 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+667 text9 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+66B text9 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+66D text9 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+673 text9 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+678 text9 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+67B text9 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+67D text9 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+681 text9 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\awmod.c
+FBA text8 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FBA text8 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FBE text8 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FC4 text8 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FC6 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FC7 text8 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FC8 text8 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FCC text8 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FCE text8 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FD2 text8 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FD6 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FD7 text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FDB text8 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FDD text8 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FDF text8 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FE3 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FE7 text8 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FEA text8 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FED text8 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FEE text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FEF text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FF3 text8 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FF5 text8 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FFB text8 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+FFF text8 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwdiv.c
+F40 text7 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F40 text7 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F48 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F4A text7 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F4B text7 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F4C text7 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F50 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F52 text7 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F56 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F5A text7 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F5C text7 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F60 text7 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F64 text7 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F67 text7 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F6A text7 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F6B text7 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F6F text7 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F71 text7 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F77 text7 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+F7B text7 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\lwmod.c
+561 text6 CODE >45:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+561 text6 CODE >49:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+574 text6 CODE >50:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+585 text6 CODE >51:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+599 text6 CODE >52:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+5A0 text6 CODE >53:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+5A2 text6 CODE >55:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+5A8 text6 CODE >56:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+5BC text6 CODE >58:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+5C2 text6 CODE >59:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+5C3 text6 CODE >62:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6DA text5 CODE >12:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6DD text5 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6E2 text5 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6E4 text5 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6E9 text5 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6EB text5 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6F1 text5 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6F3 text5 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6F9 text5 CODE >23:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+6FB text5 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+701 text5 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+703 text5 CODE >28:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+709 text5 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+70B text5 CODE >31:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+711 text5 CODE >32:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+713 text5 CODE >34:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+719 text5 CODE >35:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+71B text5 CODE >37:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+721 text5 CODE >38:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+723 text5 CODE >40:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+729 text5 CODE >41:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+72B text5 CODE >42:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+72B text5 CODE >43:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+317 text4 CODE >5:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+317 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+31A text4 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+31E text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+323 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+325 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+327 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+329 text4 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+32B text4 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+32B text4 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+32F text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+334 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+336 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+338 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+33A text4 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+33E text4 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+346 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+34A text4 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+34E text4 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+350 text4 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+351 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+353 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+35A text4 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+35E text4 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+362 text4 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+364 text4 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+36B text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+36D text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+371 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+375 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+379 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+37D text4 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+380 text4 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+384 text4 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+388 text4 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+38B text4 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+38C text4 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+38D text4 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+393 text4 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+395 text4 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+39B text4 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+3A0 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+3A5 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+3A7 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+3A9 text4 CODE >39:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+3AB text4 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+3B3 text4 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\aldiv.c
+72C text3 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+72C text3 CODE >119:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+736 text3 CODE >121:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+73A text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+73D text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+73E text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+740 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+744 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+745 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+747 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+74B text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+74C text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+74E text3 CODE >122:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+751 text3 CODE >123:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+753 text3 CODE >123:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+75A text3 CODE >124:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+75B text3 CODE >124:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+761 text3 CODE >124:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+763 text3 CODE >125:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+767 text3 CODE >125:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+76B text3 CODE >128:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+773 text3 CODE >129:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c90\common\Umul32.c
+774 text2 CODE >110:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+777 text2 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+788 text2 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+791 text2 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+7B2 text2 CODE >112:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+7B6 text2 CODE >113:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+7BA text2 CODE >114:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\conversiones.c
+495 text1 CODE >10:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+498 text1 CODE >11:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+49E text1 CODE >12:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4A2 text1 CODE >13:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4A2 text1 CODE >14:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4A9 text1 CODE >15:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4AF text1 CODE >16:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4AF text1 CODE >17:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4B6 text1 CODE >18:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4BC text1 CODE >19:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4BC text1 CODE >20:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4C3 text1 CODE >21:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4C9 text1 CODE >22:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4C9 text1 CODE >23:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4D0 text1 CODE >24:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4D6 text1 CODE >25:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4D6 text1 CODE >26:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4DD text1 CODE >27:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4E3 text1 CODE >28:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4E3 text1 CODE >29:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4E9 text1 CODE >30:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4EF text1 CODE >31:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4EF text1 CODE >32:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4F5 text1 CODE >33:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4F9 text1 CODE >36:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+4FC text1 CODE >37:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\oscilador.c
+26 maintext CODE >82:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+26 maintext CODE >83:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+2C maintext CODE >84:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+31 maintext CODE >85:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+3C maintext CODE >86:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+42 maintext CODE >87:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+4D maintext CODE >88:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+52 maintext CODE >89:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+57 maintext CODE >90:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+61 maintext CODE >91:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+67 maintext CODE >92:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+6A maintext CODE >97:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+74 maintext CODE >98:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+99 maintext CODE >99:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+AE maintext CODE >100:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+B6 maintext CODE >101:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+BE maintext CODE >102:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+C8 maintext CODE >103:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+CE maintext CODE >104:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+E5 maintext CODE >105:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+ED maintext CODE >106:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+F5 maintext CODE >107:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+10B maintext CODE >108:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+113 maintext CODE >109:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+11B maintext CODE >110:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+125 maintext CODE >111:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+12B maintext CODE >114:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+136 maintext CODE >115:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+14C maintext CODE >116:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+161 maintext CODE >117:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+169 maintext CODE >118:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+171 maintext CODE >119:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+17B maintext CODE >120:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+181 maintext CODE >121:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+198 maintext CODE >122:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+1A0 maintext CODE >123:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+1A8 maintext CODE >124:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+1BE maintext CODE >125:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+1C6 maintext CODE >126:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+1CE maintext CODE >127:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+1D8 maintext CODE >128:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+1DE maintext CODE >130:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+1F8 maintext CODE >131:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+200 maintext CODE >132:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+208 maintext CODE >133:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+222 maintext CODE >134:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+22A maintext CODE >135:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+232 maintext CODE >136:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+24B maintext CODE >137:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
+253 maintext CODE >138:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -662,33 +720,34 @@ __Hspace_1 7E 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
-_Lcd_Init 736 0 CODE 0 text16 dist/default/production\ED2-Lab02.X.production.o
-_Lcd_Port 1F88 0 CODE 0 text19 dist/default/production\ED2-Lab02.X.production.o
+_Lcd_Init 9FA 0 CODE 0 text18 dist/default/production\ED2-Lab02.X.production.o
+_Lcd_Port 1E08 0 CODE 0 text21 dist/default/production\ED2-Lab02.X.production.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_Lcd_Init 816 0 CODE 0 text16 dist/default/production\ED2-Lab02.X.production.o
-__end_of_Lcd_Port 2000 0 CODE 0 text19 dist/default/production\ED2-Lab02.X.production.o
+__end_of_Lcd_Init AC2 0 CODE 0 text18 dist/default/production\ED2-Lab02.X.production.o
+__end_of_Lcd_Port 1E80 0 CODE 0 text21 dist/default/production\ED2-Lab02.X.production.o
+UART_mode_config@mode 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __Hstrings 0 0 ABS 0 strings -
+_indicador 5D 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
 _ADIF 66 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-_IOCB 96 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-_WPUB 95 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
-_cont 52 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+_cont 5E 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
 _main 4C 0 CODE 0 maintext dist/default/production\ED2-Lab02.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-_Lcd_Write_Char 1E9E 0 CODE 0 text14 dist/default/production\ED2-Lab02.X.production.o
-start 1C 0 CODE 0 init C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
+_Lcd_Write_Char 1CA6 0 CODE 0 text16 dist/default/production\ED2-Lab02.X.production.o
+start 1C 0 CODE 0 init C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
 Lcd_Port@a 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 ?___lmul 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-_OPTION_REGbits 81 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
+__end_of_UART_RX_config 1D72 0 CODE 0 text14 dist/default/production\ED2-Lab02.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 ___awmod@sign 2C 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
-_setupINTOSC 8E8 0 CODE 0 text1 dist/default/production\ED2-Lab02.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+_setupINTOSC 92A 0 CODE 0 text1 dist/default/production\ED2-Lab02.X.production.o
+_UART_read_char FF6 0 CODE 0 text26 dist/default/production\ED2-Lab02.X.production.o
 ___aldiv@divisor 33 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
@@ -700,29 +759,33 @@ __Hclrtext 0 0 ABS 0 clrtext -
 mapeo@outmax 45 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 mapeo@outmin 44 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 _decimas 5B 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
-__end_of_Lcd_Write_Char 1ECE 0 CODE 0 text14 dist/default/production\ED2-Lab02.X.production.o
+__end_of_Lcd_Write_Char 1CD6 0 CODE 0 text16 dist/default/production\ED2-Lab02.X.production.o
 _ADRESH 1E 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 ___awdiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 mapeo@resultado 4B 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 _unidades 5C 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
-__end_of___lmul D18 0 CODE 0 text3 dist/default/production\ED2-Lab02.X.production.o
+__end_of___lmul EE8 0 CODE 0 text3 dist/default/production\ED2-Lab02.X.production.o
+UART_RX_config@baudrate 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-_ADC_read EB2 0 CODE 0 text20 dist/default/production\ED2-Lab02.X.production.o
+_ADC_read 1EF8 0 CODE 0 text22 dist/default/production\ED2-Lab02.X.production.o
 ___awdiv@divisor 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 ___lwmod@divisor 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-__end_of___aldiv 646 0 CODE 0 text4 dist/default/production\ED2-Lab02.X.production.o
-__end_of___awdiv 8E8 0 CODE 0 text10 dist/default/production\ED2-Lab02.X.production.o
-__end_of___awmod B34 0 CODE 0 text9 dist/default/production\ED2-Lab02.X.production.o
-__end_of___fltol 736 0 CODE 0 text12 dist/default/production\ED2-Lab02.X.production.o
-__end_of___lwdiv E32 0 CODE 0 text8 dist/default/production\ED2-Lab02.X.production.o
-__end_of___lwmod FA6 0 CODE 0 text7 dist/default/production\ED2-Lab02.X.production.o
-__end_of_ADC_read F2E 0 CODE 0 text20 dist/default/production\ED2-Lab02.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
-___stacklo 0 0 ABS 0 - C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
+__end_of___aldiv 768 0 CODE 0 text4 dist/default/production\ED2-Lab02.X.production.o
+__end_of___awdiv 92A 0 CODE 0 text10 dist/default/production\ED2-Lab02.X.production.o
+__end_of___awmod D04 0 CODE 0 text9 dist/default/production\ED2-Lab02.X.production.o
+__end_of___fltol 858 0 CODE 0 text12 dist/default/production\ED2-Lab02.X.production.o
+__end_of___lwdiv 2000 0 CODE 0 text8 dist/default/production\ED2-Lab02.X.production.o
+__end_of___lwmod 1EF8 0 CODE 0 text7 dist/default/production\ED2-Lab02.X.production.o
+__end_of_UART_read_char FFE 0 CODE 0 text26 dist/default/production\ED2-Lab02.X.production.o
+__end_of_ADC_read 1F74 0 CODE 0 text22 dist/default/production\ED2-Lab02.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+___stacklo 0 0 ABS 0 - C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
 _centesimas 5A 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
+_BAUDCTLbits 187 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 ___lwdiv@quotient 2B 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-_descomponer 9B8 0 CODE 0 text6 dist/default/production\ED2-Lab02.X.production.o
-Lcd_Set_Cursor@temp 2C 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
+_descomponer AC2 0 CODE 0 text6 dist/default/production\ED2-Lab02.X.production.o
+Lcd_Set_Cursor@temp 2B 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 ___lwmod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 start_initialization 22 0 CODE 0 cinit dist/default/production\ED2-Lab02.X.production.o
 descomponer@dec 37 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
@@ -730,20 +793,21 @@ descomponer@num 31 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.pro
 descomponer@pos 2F 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 descomponer@uni 36 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 _TRISAbits 85 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-_TRISCbits 87 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 ___aldiv@quotient 3E 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 inttochar@num 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-_Lcd_Write_String FA6 0 CODE 0 text13 dist/default/production\ED2-Lab02.X.production.o
+_Lcd_Write_String 1DB6 0 CODE 0 text15 dist/default/production\ED2-Lab02.X.production.o
+_SPBRGH 9A 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 mapeo@inmax 43 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 mapeo@inmin 42 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
+___int_sp 0 0 STACK 2 stack C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
 mapeo@valor 4D 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
 __Hbank3 0 0 ABS 0 bank3 -
 __Hcinit 4C 0 CODE 0 cinit -
+_UART_mode_config D04 0 CODE 0 text13 dist/default/production\ED2-Lab02.X.production.o
 __Hidloc 4008 0 IDLOC 5 idloc -
 __Hstack 0 0 STACK 2 stack -
 __stringbase 100A 0 STRING 0 strings dist/default/production\ED2-Lab02.X.production.o
@@ -765,7 +829,6 @@ ADC_config@channel 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.
 __Lstack 0 0 STACK 2 stack -
 _PORTAbits 5 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _PORTBbits 6 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-_PORTCbits 7 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _PORTDbits 8 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _INTCONbits B 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 __Habs1 0 0 ABS 0 abs1 -
@@ -785,11 +848,11 @@ __Lsfr1 0 0 ABS 0 sfr1 -
 __Lsfr2 0 0 ABS 0 sfr2 -
 __Lsfr3 0 0 ABS 0 sfr3 -
 __Ltext 0 0 ABS 0 text -
-___lmul C88 0 CODE 0 text3 dist/default/production\ED2-Lab02.X.production.o
+___lmul E58 0 CODE 0 text3 dist/default/production\ED2-Lab02.X.production.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
-_configpuertos 1F06 0 CODE 0 text11 dist/default/production\ED2-Lab02.X.production.o
+_configpuertos 1D08 0 CODE 0 text11 dist/default/production\ED2-Lab02.X.production.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-_RC0 38 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
+_RB1 31 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _RD1 41 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _RD2 42 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _RD3 43 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
@@ -800,49 +863,54 @@ _RD7 47 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 __S0 1000 0 ABS 0 - -
 __S1 7E 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
-_isr B34 0 CODE 0 text22 dist/default/production\ED2-Lab02.X.production.o
+_isr B88 0 CODE 0 text24 dist/default/production\ED2-Lab02.X.production.o
 saved_w 7E 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-__end_of_Lcd_Write_String FF8 0 CODE 0 text13 dist/default/production\ED2-Lab02.X.production.o
-__end_of_setupINTOSC 9B8 0 CODE 0 text1 dist/default/production\ED2-Lab02.X.production.o
-___xxtofl 39C 0 CODE 0 text23 dist/default/production\ED2-Lab02.X.production.o
-__end_of_isr BE4 0 CODE 0 text22 dist/default/production\ED2-Lab02.X.production.o
+__end_of_Lcd_Write_String 1E08 0 CODE 0 text15 dist/default/production\ED2-Lab02.X.production.o
+__end_of_setupINTOSC 9FA 0 CODE 0 text1 dist/default/production\ED2-Lab02.X.production.o
+___xxtofl 4BE 0 CODE 0 text25 dist/default/production\ED2-Lab02.X.production.o
+__end_of_isr C4E 0 CODE 0 text24 dist/default/production\ED2-Lab02.X.production.o
 _valADC0 56 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
 _valADC1 54 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
-__end_of_Lcd_Clear 1E9E 0 CODE 0 text17 dist/default/production\ED2-Lab02.X.production.o
+__end_of_Lcd_Clear 1CA6 0 CODE 0 text19 dist/default/production\ED2-Lab02.X.production.o
 __Lintentry 8 0 CODE 0 intentry -
 __stringtab 1000 0 STRING 0 strings dist/default/production\ED2-Lab02.X.production.o
 Lcd_Write_String@a 2B 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 Lcd_Write_String@i 29 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Pablo\AppData\Local\Temp\xcAsbqc.o
-__end_of___xxtofl 50C 0 CODE 0 text23 dist/default/production\ED2-Lab02.X.production.o
-__end_of_Lcd_Cmd 1F06 0 CODE 0 text18 dist/default/production\ED2-Lab02.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+__end_of___xxtofl 62E 0 CODE 0 text25 dist/default/production\ED2-Lab02.X.production.o
+__end_of_Lcd_Cmd 1D08 0 CODE 0 text20 dist/default/production\ED2-Lab02.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
-_lecADC0 4E 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
+_lecADC0 50 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
 _lecADC1 58 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
+__end_of_UART_mode_config DB4 0 CODE 0 text13 dist/default/production\ED2-Lab02.X.production.o
 ___awmod@counter 2B 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
+_RCSTAbits 18 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _PIE1bits 8C 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-__ptext10 816 0 CODE 0 text10 dist/default/production\ED2-Lab02.X.production.o
-__ptext11 1F06 0 CODE 0 text11 dist/default/production\ED2-Lab02.X.production.o
-__ptext12 646 0 CODE 0 text12 dist/default/production\ED2-Lab02.X.production.o
-__ptext13 FA6 0 CODE 0 text13 dist/default/production\ED2-Lab02.X.production.o
-__ptext14 1E9E 0 CODE 0 text14 dist/default/production\ED2-Lab02.X.production.o
-__ptext15 1F44 0 CODE 0 text15 dist/default/production\ED2-Lab02.X.production.o
-__ptext16 736 0 CODE 0 text16 dist/default/production\ED2-Lab02.X.production.o
-__ptext17 1E90 0 CODE 0 text17 dist/default/production\ED2-Lab02.X.production.o
-__ptext18 1ECE 0 CODE 0 text18 dist/default/production\ED2-Lab02.X.production.o
-__ptext19 1F88 0 CODE 0 text19 dist/default/production\ED2-Lab02.X.production.o
-__ptext20 EB2 0 CODE 0 text20 dist/default/production\ED2-Lab02.X.production.o
-__ptext21 E32 0 CODE 0 text21 dist/default/production\ED2-Lab02.X.production.o
-__ptext22 B34 0 CODE 0 text22 dist/default/production\ED2-Lab02.X.production.o
-__ptext23 39C 0 CODE 0 text23 dist/default/production\ED2-Lab02.X.production.o
-_Lcd_Clear 1E90 0 CODE 0 text17 dist/default/production\ED2-Lab02.X.production.o
-___aldiv 50C 0 CODE 0 text4 dist/default/production\ED2-Lab02.X.production.o
-___awdiv 816 0 CODE 0 text10 dist/default/production\ED2-Lab02.X.production.o
-___awmod A7E 0 CODE 0 text9 dist/default/production\ED2-Lab02.X.production.o
-_Lcd_Set_Cursor 1F44 0 CODE 0 text15 dist/default/production\ED2-Lab02.X.production.o
-___fltol 646 0 CODE 0 text12 dist/default/production\ED2-Lab02.X.production.o
-___lwdiv DA6 0 CODE 0 text8 dist/default/production\ED2-Lab02.X.production.o
-___lwmod F2E 0 CODE 0 text7 dist/default/production\ED2-Lab02.X.production.o
+__ptext10 858 0 CODE 0 text10 dist/default/production\ED2-Lab02.X.production.o
+__ptext11 1D08 0 CODE 0 text11 dist/default/production\ED2-Lab02.X.production.o
+__ptext12 768 0 CODE 0 text12 dist/default/production\ED2-Lab02.X.production.o
+__ptext13 D04 0 CODE 0 text13 dist/default/production\ED2-Lab02.X.production.o
+__ptext14 1D3C 0 CODE 0 text14 dist/default/production\ED2-Lab02.X.production.o
+__ptext15 1DB6 0 CODE 0 text15 dist/default/production\ED2-Lab02.X.production.o
+__ptext16 1CA6 0 CODE 0 text16 dist/default/production\ED2-Lab02.X.production.o
+__ptext17 1D72 0 CODE 0 text17 dist/default/production\ED2-Lab02.X.production.o
+__ptext18 9FA 0 CODE 0 text18 dist/default/production\ED2-Lab02.X.production.o
+__ptext19 1C98 0 CODE 0 text19 dist/default/production\ED2-Lab02.X.production.o
+__ptext20 1CD6 0 CODE 0 text20 dist/default/production\ED2-Lab02.X.production.o
+__ptext21 1E08 0 CODE 0 text21 dist/default/production\ED2-Lab02.X.production.o
+__ptext22 1EF8 0 CODE 0 text22 dist/default/production\ED2-Lab02.X.production.o
+__ptext23 F76 0 CODE 0 text23 dist/default/production\ED2-Lab02.X.production.o
+__ptext24 B88 0 CODE 0 text24 dist/default/production\ED2-Lab02.X.production.o
+__ptext25 4BE 0 CODE 0 text25 dist/default/production\ED2-Lab02.X.production.o
+__ptext26 FF6 0 CODE 0 text26 dist/default/production\ED2-Lab02.X.production.o
+_Lcd_Clear 1C98 0 CODE 0 text19 dist/default/production\ED2-Lab02.X.production.o
+___aldiv 62E 0 CODE 0 text4 dist/default/production\ED2-Lab02.X.production.o
+___awdiv 858 0 CODE 0 text10 dist/default/production\ED2-Lab02.X.production.o
+___awmod C4E 0 CODE 0 text9 dist/default/production\ED2-Lab02.X.production.o
+_Lcd_Set_Cursor 1D72 0 CODE 0 text17 dist/default/production\ED2-Lab02.X.production.o
+___fltol 768 0 CODE 0 text12 dist/default/production\ED2-Lab02.X.production.o
+___lwdiv 1F74 0 CODE 0 text8 dist/default/production\ED2-Lab02.X.production.o
+___lwmod 1E80 0 CODE 0 text7 dist/default/production\ED2-Lab02.X.production.o
 __pmaintext 4C 0 CODE 0 maintext dist/default/production\ED2-Lab02.X.production.o
 ___lmul@multiplier 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __Lcommon 0 0 ABS 0 common -
@@ -851,23 +919,23 @@ ___lwdiv@divisor 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.pr
 _ADCON0bits 1F 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _ADCON1bits 9F 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 __end_of__stringtab 100C 0 STRING 0 strings dist/default/production\ED2-Lab02.X.production.o
-__end_of_descomponer A7E 0 CODE 0 text6 dist/default/production\ED2-Lab02.X.production.o
+__end_of_descomponer B88 0 CODE 0 text6 dist/default/production\ED2-Lab02.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-_ADC_config E32 0 CODE 0 text21 dist/default/production\ED2-Lab02.X.production.o
+_ADC_config F76 0 CODE 0 text23 dist/default/production\ED2-Lab02.X.production.o
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 -
 _PIR1bits C 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 __Lend_init 1C 0 CODE 0 end_init -
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 ___fltol@exp1 2F 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 end_of_initialization 44 0 CODE 0 cinit dist/default/production\ED2-Lab02.X.production.o
-__end_of_Lcd_Set_Cursor 1F88 0 CODE 0 text15 dist/default/production\ED2-Lab02.X.production.o
+__end_of_Lcd_Set_Cursor 1DB6 0 CODE 0 text17 dist/default/production\ED2-Lab02.X.production.o
 __Hintentry 1C 0 CODE 0 intentry -
-Lcd_Set_Cursor@a 2B 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-Lcd_Set_Cursor@b 2A 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
+Lcd_Set_Cursor@a 2A 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
+Lcd_Set_Cursor@b 29 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __Lstrings 0 0 ABS 0 strings -
 ___awdiv@quotient 2D 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 ?___aldiv 33 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
@@ -877,19 +945,19 @@ ___lwdiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.p
 ?___fltol 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 ?___lwdiv 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 ?___lwmod 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-__end_of_configpuertos 1F44 0 CODE 0 text11 dist/default/production\ED2-Lab02.X.production.o
+__end_of_configpuertos 1D3C 0 CODE 0 text11 dist/default/production\ED2-Lab02.X.production.o
 __Hreset_vec 6 0 CODE 0 reset_vec -
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 ___awmod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-__ptext1 8E8 0 CODE 0 text1 dist/default/production\ED2-Lab02.X.production.o
-__ptext2 D18 0 CODE 0 text2 dist/default/production\ED2-Lab02.X.production.o
-__ptext3 C88 0 CODE 0 text3 dist/default/production\ED2-Lab02.X.production.o
-__ptext4 50C 0 CODE 0 text4 dist/default/production\ED2-Lab02.X.production.o
-__ptext5 BE4 0 CODE 0 text5 dist/default/production\ED2-Lab02.X.production.o
-__ptext6 9B8 0 CODE 0 text6 dist/default/production\ED2-Lab02.X.production.o
-__ptext7 F2E 0 CODE 0 text7 dist/default/production\ED2-Lab02.X.production.o
-__ptext8 DA6 0 CODE 0 text8 dist/default/production\ED2-Lab02.X.production.o
-__ptext9 A7E 0 CODE 0 text9 dist/default/production\ED2-Lab02.X.production.o
+__ptext1 92A 0 CODE 0 text1 dist/default/production\ED2-Lab02.X.production.o
+__ptext2 EE8 0 CODE 0 text2 dist/default/production\ED2-Lab02.X.production.o
+__ptext3 E58 0 CODE 0 text3 dist/default/production\ED2-Lab02.X.production.o
+__ptext4 62E 0 CODE 0 text4 dist/default/production\ED2-Lab02.X.production.o
+__ptext5 DB4 0 CODE 0 text5 dist/default/production\ED2-Lab02.X.production.o
+__ptext6 AC2 0 CODE 0 text6 dist/default/production\ED2-Lab02.X.production.o
+__ptext7 1E80 0 CODE 0 text7 dist/default/production\ED2-Lab02.X.production.o
+__ptext8 1F74 0 CODE 0 text8 dist/default/production\ED2-Lab02.X.production.o
+__ptext9 C4E 0 CODE 0 text9 dist/default/production\ED2-Lab02.X.production.o
 ___aldiv@dividend 37 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 ?___xxtofl 70 0 COMMON 1 cstackCOMMON dist/default/production\ED2-Lab02.X.production.o
@@ -899,35 +967,42 @@ __Lreset_vec 0 0 CODE 0 reset_vec -
 ___fltol@f1 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __end_of__initialization 44 0 CODE 0 cinit dist/default/production\ED2-Lab02.X.production.o
 ___awmod@divisor 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-__end_of_ADC_config EB2 0 CODE 0 text21 dist/default/production\ED2-Lab02.X.production.o
+__end_of_ADC_config FF6 0 CODE 0 text23 dist/default/production\ED2-Lab02.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
-Lcd_Cmd@a 29 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
+Lcd_Cmd@a 28 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 ?_mapeo 42 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
 ___lmul@product 2F 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 ___lmul@multiplicand 2A 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 _ANSELbits 188 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\ED2-Lab02.X.production.o
+_TXSTAbits 98 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 __Hend_init 22 0 CODE 0 end_init -
 ___aldiv@counter 3C 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-__end_of_main 39C 0 CODE 0 maintext dist/default/production\ED2-Lab02.X.production.o
-__end_of_inttochar C88 0 CODE 0 text5 dist/default/production\ED2-Lab02.X.production.o
+__end_of_main 4BE 0 CODE 0 maintext dist/default/production\ED2-Lab02.X.production.o
+__end_of_inttochar E58 0 CODE 0 text5 dist/default/production\ED2-Lab02.X.production.o
 _PORTB 6 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _PORTD 8 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-__end_of_mapeo DA6 0 CODE 0 text2 dist/default/production\ED2-Lab02.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
+__end_of_mapeo F76 0 CODE 0 text2 dist/default/production\ED2-Lab02.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _TRISD 88 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
 interrupt_function 8 0 CODE 0 intentry dist/default/production\ED2-Lab02.X.production.o
-_mapeo D18 0 CODE 0 text2 dist/default/production\ED2-Lab02.X.production.o
+_mapeo EE8 0 CODE 0 text2 dist/default/production\ED2-Lab02.X.production.o
 __pintentry 8 0 CODE 0 intentry dist/default/production\ED2-Lab02.X.production.o
-_Lcd_Cmd 1ECE 0 CODE 0 text18 dist/default/production\ED2-Lab02.X.production.o
+_Lcd_Cmd 1CD6 0 CODE 0 text20 dist/default/production\ED2-Lab02.X.production.o
 __initialization 22 0 CODE 0 cinit dist/default/production\ED2-Lab02.X.production.o
 ___xxtofl@sign 78 0 COMMON 1 cstackCOMMON dist/default/production\ED2-Lab02.X.production.o
-__pbssBANK0 4E 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
+__pbssBANK0 50 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
 __pstrings 1000 0 STRING 0 strings dist/default/production\ED2-Lab02.X.production.o
-_inttochar BE4 0 CODE 0 text5 dist/default/production\ED2-Lab02.X.production.o
+_inttochar DB4 0 CODE 0 text5 dist/default/production\ED2-Lab02.X.production.o
+_UART_RX_config 1D3C 0 CODE 0 text14 dist/default/production\ED2-Lab02.X.production.o
 Lcd_Write_Char@a 28 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
@@ -954,17 +1029,22 @@ Lcd_Write_Char@a 28 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.pr
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text11 0 F83 1F06 1F 2
-text14 0 F4F 1E9E 18 2
-text15 0 FA2 1F44 22 2
-text17 0 F48 1E90 7 2
-text18 0 F67 1ECE 1C 2
-text19 0 FC4 1F88 3C 2
+text7 0 F40 1E80 3C 2
+text8 0 FBA 1F74 46 2
+text11 0 E84 1D08 1A 2
+text14 0 E9E 1D3C 1B 2
+text15 0 EDB 1DB6 29 2
+text16 0 E53 1CA6 18 2
+text17 0 EB9 1D72 22 2
+text19 0 E4C 1C98 7 2
+text20 0 E6B 1CD6 19 2
+text21 0 F04 1E08 3C 2
+text22 0 F7C 1EF8 3E 2
 cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 3D 1
-intentry 0 4 8 7F8 2
+cstackBANK0 1 20 20 3F 1
+intentry 0 4 8 7FB 2
 reset_vec 0 0 0 3 2
-strings 0 800 1000 15 2
+strings 0 800 1000 16 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

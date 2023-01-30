@@ -9,6 +9,7 @@
       <itemPath>oscilador.h</itemPath>
       <itemPath>confpuertos.h</itemPath>
       <itemPath>conversiones.h</itemPath>
+      <itemPath>setupUART.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -23,6 +24,7 @@
       <itemPath>LCD.c</itemPath>
       <itemPath>confpuertos.c</itemPath>
       <itemPath>conversiones.c</itemPath>
+      <itemPath>setupUART.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

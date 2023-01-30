@@ -4,4 +4,5 @@ LCD.h  \
 oscilador.h  \
 setupADC.h  \
 confpuertos.h  \
-conversiones.h 
+conversiones.h  \
+setupUART.h 

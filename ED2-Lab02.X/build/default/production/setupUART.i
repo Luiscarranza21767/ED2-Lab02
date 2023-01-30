@@ -1,4 +1,4 @@
-# 1 "confpuertos.c"
+# 1 "setupUART.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,15 +6,13 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "confpuertos.c" 2
+# 1 "setupUART.c" 2
 
 
 
 
 
 
-# 1 "./confpuertos.h" 1
-# 11 "./confpuertos.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -2632,33 +2630,92 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\\pic\\include\\xc.h" 2 3
-# 11 "./confpuertos.h" 2
+# 7 "setupUART.c" 2
 
+# 1 "./setupUART.h" 1
+# 14 "./setupUART.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdint.h" 1 3
-# 12 "./confpuertos.h" 2
+# 14 "./setupUART.h" 2
 
 
-void configpuertos(void);
-# 7 "confpuertos.c" 2
 
 
-void configpuertos(void){
 
-    TRISB = 0b11000000;
-    PORTB = 0b11000000;
+
+void UART_mode_config(uint8_t mode);
+
+void UART_RX_config(uint16_t baudrate);
+
+void UART_TX_config(uint16_t baudrate);
+
+void UART_write_char(char character);
+
+char UART_read_char(void);
+# 8 "setupUART.c" 2
+
+
+void UART_mode_config(uint8_t mode){
+
+    if(mode == 0){
+        BAUDCTLbits.BRG16 = 0;
+        TXSTAbits.BRGH = 0;
+        TXSTAbits.SYNC = 0;
+    }
+    else if(mode == 1){
+        BAUDCTLbits.BRG16 = 0;
+        TXSTAbits.BRGH = 1;
+        TXSTAbits.SYNC = 0;
+    }
+    else if(mode == 2){
+        BAUDCTLbits.BRG16 = 1;
+        TXSTAbits.BRGH = 0;
+        TXSTAbits.SYNC = 0;
+    }
+    else if(mode == 3){
+        BAUDCTLbits.BRG16 = 1;
+        TXSTAbits.BRGH = 1;
+        TXSTAbits.SYNC = 0;
+    }
+    else if(mode == 4){
+        BAUDCTLbits.BRG16 = 0;
+        TXSTAbits.BRGH = 1;
+        TXSTAbits.SYNC = 1;
+    }
+    else if(mode == 5){
+        BAUDCTLbits.BRG16 = 1;
+        TXSTAbits.BRGH = 0;
+        TXSTAbits.SYNC = 1;
+    }
+
+    RCSTAbits.SPEN = 1;
+
+
+}
+void UART_RX_config(uint16_t baudrate){
+    if (baudrate == 9600){
+        SPBRG = 25;
+        SPBRGH = 0;
+    }
+    RCSTAbits.CREN = 1;
+    PIE1bits.RCIE = 1;
+    PIR1bits.RCIF = 0;
+    INTCONbits.PEIE = 1;
     INTCONbits.GIE = 1;
-    ANSELH = 0;
+}
 
+void UART_TX_config(uint16_t baudrate){
+    if (baudrate == 9600){
+        SPBRG = 25;
+        SPBRGH = 0;
+    }
+    TXSTAbits.TXEN = 1;
+    PIR1bits.TXIF = 0;
+}
 
+void UART_write_char(char character){
+    TXREG = character;
+}
 
-    TRISD = 0;
-    PORTD = 0;
-    TRISC = 0b10000000;
-    PORTC = 0;
-
-
-
-
-
-
+char UART_read_char(void){
+    return RCREG;
 }

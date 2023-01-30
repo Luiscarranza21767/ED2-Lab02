@@ -6,7 +6,7 @@
  */
 
 #include "setupADC.h"
-#define _XTAL_FREQ 4000000
+#define _XTAL_FREQ 1000000
 
 void ADC_config(int channel){
     if((channel & 0x01) == 1){

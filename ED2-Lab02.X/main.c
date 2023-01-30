@@ -41,28 +41,20 @@
 #include "setupADC.h"
 #include "confpuertos.h"
 #include "conversiones.h"
+#include "setupUART.h"
 
-#define _XTAL_FREQ 4000000
+#define _XTAL_FREQ 1000000
 float lecADC0;
 int lecADC1;
 uint16_t valADC0;
 uint16_t valADC1;
-int cont;
+uint8_t cont;
+char indicador;
 char unidades;
 char decimas;
 char centesimas;
 
 void __interrupt() isr (void){
-    
-    if(INTCONbits.RBIF){
-        if(PORTBbits.RB7 == 0){
-            cont = 1;
-        }
-        if(PORTBbits.RB6 == 0){
-            cont = 2;
-        }
-        INTCONbits.RBIF = 0;
-    }
     
     if(PIR1bits.ADIF){
         if(ADCON0bits.CHS == 0){
@@ -74,15 +66,30 @@ void __interrupt() isr (void){
         ADIF = 0;                   // Apaga la bandera del ADC
     }
     
+    if(PIR1bits.RCIF){
+        indicador = UART_read_char(); //Realiza la lectura de UART
+        if (indicador == '+'){
+            cont = cont + 1;
+        }
+        else if(indicador == '-'){
+            cont = cont - 1;
+        }
+        
+        PIR1bits.RCIF = 0;  // Limpia la bandera
+    }
 }
+
 void main(void) {
-    setupINTOSC(6);
+    setupINTOSC(4);     //Oscilador a 1MHz
     configpuertos();
-    ADC_config(0x03); //0x03 = 0b00000011 -> AN0 y AN1 son analógicos
+    ADC_config(0x03);   //0x03 = 0b00000011 -> AN0 y AN1 son analógicos
+    UART_mode_config(3);    //Configurar UART como 16 bit asíncrono
+    UART_RX_config(9600);
     Lcd_Init();
     Lcd_Clear();
     Lcd_Set_Cursor(1,2);
-    Lcd_Write_String("S1:   S2:  S3:"); 
+    Lcd_Write_String("S1:   S2:   S3:"); 
+    cont = 0;
     
     while(1){
         
@@ -119,7 +126,15 @@ void main(void) {
         Lcd_Write_Char(centesimas);
         Lcd_Set_Cursor(2,11);
         Lcd_Write_Char('V');
-
         
+        unidades = inttochar(descomponer(2, cont));
+        Lcd_Set_Cursor(2,13);
+        Lcd_Write_Char(unidades);
+        decimas = inttochar(descomponer(1, cont));
+        Lcd_Set_Cursor(2,14);
+        Lcd_Write_Char(decimas);
+        centesimas = inttochar(descomponer(0, cont));
+        Lcd_Set_Cursor(2,15);
+        Lcd_Write_Char(centesimas);
     }
 }

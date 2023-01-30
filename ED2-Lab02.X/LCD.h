@@ -10,17 +10,18 @@
 // more than once.  
 #ifndef LCD_H
 #define	LCD_H
+#include <xc.h>
 
 #ifndef _XTAL_FREQ
-#define _XTAL_FREQ 4000000
+#define _XTAL_FREQ 1000000
 #endif
 
 #ifndef RS
-#define RS PORTCbits.RC1
+#define RS PORTBbits.RB0
 #endif
 
 #ifndef EN
-#define EN RC0
+#define EN RB1
 #endif
 
 #ifndef D0

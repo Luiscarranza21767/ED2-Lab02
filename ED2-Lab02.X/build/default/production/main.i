@@ -2658,7 +2658,7 @@ extern __bank0 __bit __timeout;
 
 
 # 1 "./LCD.h" 1
-# 63 "./LCD.h"
+# 64 "./LCD.h"
 void Lcd_Port(char a);
 
 void Lcd_Cmd(char a);
@@ -2727,28 +2727,40 @@ int convint(char centenas, char decenas, char unidades);
 uint16_t mapeo(uint8_t valor, uint8_t inmin, uint8_t inmax, uint8_t outmin, uint16_t outmax);
 # 43 "main.c" 2
 
+# 1 "./setupUART.h" 1
+# 14 "./setupUART.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.40\\pic\\include\\c90\\stdint.h" 1 3
+# 14 "./setupUART.h" 2
+
+
+
+
+
+
+void UART_mode_config(uint8_t mode);
+
+void UART_RX_config(uint16_t baudrate);
+
+void UART_TX_config(uint16_t baudrate);
+
+void UART_write_char(char character);
+
+char UART_read_char(void);
+# 44 "main.c" 2
+
 
 
 float lecADC0;
 int lecADC1;
 uint16_t valADC0;
 uint16_t valADC1;
-int cont;
+uint8_t cont;
+char indicador;
 char unidades;
 char decimas;
 char centesimas;
 
 void __attribute__((picinterrupt(("")))) isr (void){
-
-    if(INTCONbits.RBIF){
-        if(PORTBbits.RB7 == 0){
-            cont = 1;
-        }
-        if(PORTBbits.RB6 == 0){
-            cont = 2;
-        }
-        INTCONbits.RBIF = 0;
-    }
 
     if(PIR1bits.ADIF){
         if(ADCON0bits.CHS == 0){
@@ -2760,15 +2772,30 @@ void __attribute__((picinterrupt(("")))) isr (void){
         ADIF = 0;
     }
 
+    if(PIR1bits.RCIF){
+        indicador = UART_read_char();
+        if (indicador == '+'){
+            cont = cont + 1;
+        }
+        else if(indicador == '-'){
+            cont = cont - 1;
+        }
+
+        PIR1bits.RCIF = 0;
+    }
 }
+
 void main(void) {
-    setupINTOSC(6);
+    setupINTOSC(4);
     configpuertos();
     ADC_config(0x03);
+    UART_mode_config(3);
+    UART_RX_config(9600);
     Lcd_Init();
     Lcd_Clear();
     Lcd_Set_Cursor(1,2);
-    Lcd_Write_String("S1:   S2:  S3:");
+    Lcd_Write_String("S1:   S2:   S3:");
+    cont = 0;
 
     while(1){
 
@@ -2806,6 +2833,14 @@ void main(void) {
         Lcd_Set_Cursor(2,11);
         Lcd_Write_Char('V');
 
-
+        unidades = inttochar(descomponer(2, cont));
+        Lcd_Set_Cursor(2,13);
+        Lcd_Write_Char(unidades);
+        decimas = inttochar(descomponer(1, cont));
+        Lcd_Set_Cursor(2,14);
+        Lcd_Write_Char(decimas);
+        centesimas = inttochar(descomponer(0, cont));
+        Lcd_Set_Cursor(2,15);
+        Lcd_Write_Char(centesimas);
     }
 }
