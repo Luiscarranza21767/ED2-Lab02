@@ -6,8 +6,9 @@
             <file>file:/D:/Backup/Documentos/GitHub/ED2-Lab02/ED2-Lab02.X/setupUART.c</file>
             <file>file:/D:/Backup/Documentos/GitHub/ED2-Lab02/ED2-Lab02.X/main.c</file>
             <file>file:/D:/Backup/Documentos/GitHub/ED2-Lab02/ED2-Lab02.X/confpuertos.c</file>
-            <file>file:/D:/Backup/Documentos/GitHub/ED2-Lab02/ED2-Lab02.X/LCD.c</file>
+            <file>file:/D:/Backup/Documentos/GitHub/ED2-Lab02/ED2-Lab02.X/oscilador.c</file>
             <file>file:/D:/Backup/Documentos/GitHub/ED2-Lab02/ED2-Lab02.X/setupUART.h</file>
+            <file>file:/D:/Backup/Documentos/GitHub/ED2-Lab02/ED2-Lab02.X/LCD.c</file>
             <file>file:/D:/Backup/Documentos/GitHub/ED2-Lab02/ED2-Lab02.X/setupADC.c</file>
             <file>file:/D:/Backup/Documentos/GitHub/ED2-Lab02/ED2-Lab02.X/conversiones.c</file>
         </group>
