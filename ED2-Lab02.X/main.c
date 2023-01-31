@@ -2,10 +2,10 @@
  IE3054 Electrónica Digital 2
  Autor: Luis Pablo Carranza
  Compilador: XC8, MPLAB X IDE (v6.00)
- Proyecto: Laboratorio No.01
+ Proyecto: Laboratorio No.02
  Hardware PIC16F887
- Creado: 19/01/23
- Última Modificación: 19/01/23*/
+ Creado: 26/01/23
+ Última Modificación: 30/01/23*/
 
 // CONFIG1
 #pragma config FOSC = INTRC_NOCLKOUT // Oscillator Selection bits (INTOSC 

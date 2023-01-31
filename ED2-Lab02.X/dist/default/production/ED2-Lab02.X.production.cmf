@@ -47,7 +47,7 @@ intentry CODE 0 4 4 A 2 1
 bssBANK0 BANK0 1 50 50 F 1 1
 strings STRING 0 800 800 16 2 1
 config CONFIG 4 2007 2007 2 2 1
-$C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+$C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
 idloc IDLOC 5 2000 2000 4 2 1
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 E E 3 2 1
@@ -105,28 +105,28 @@ STRING 1000-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\ED2-Lab02.X.production.o
-11 cinit CODE >1510:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-11 cinit CODE >1513:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-11 cinit CODE >1548:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-12 cinit CODE >1549:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-13 cinit CODE >1550:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-14 cinit CODE >1551:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-15 cinit CODE >1552:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-16 cinit CODE >1553:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-17 cinit CODE >1554:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-18 cinit CODE >1555:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-19 cinit CODE >1556:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-1A cinit CODE >1557:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-1B cinit CODE >1558:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-1C cinit CODE >1559:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-1D cinit CODE >1560:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-1E cinit CODE >1561:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-1F cinit CODE >1562:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-20 cinit CODE >1563:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-21 cinit CODE >1564:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-22 cinit CODE >1570:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-22 cinit CODE >1572:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
-23 cinit CODE >1573:C:\Users\Pablo\AppData\Local\Temp\xcAsmio.s
+11 cinit CODE >1510:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+11 cinit CODE >1513:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+11 cinit CODE >1548:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+12 cinit CODE >1549:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+13 cinit CODE >1550:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+14 cinit CODE >1551:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+15 cinit CODE >1552:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+16 cinit CODE >1553:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+17 cinit CODE >1554:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+18 cinit CODE >1555:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+19 cinit CODE >1556:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+1A cinit CODE >1557:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+1B cinit CODE >1558:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+1C cinit CODE >1559:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+1D cinit CODE >1560:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+1E cinit CODE >1561:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+1F cinit CODE >1562:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+20 cinit CODE >1563:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+21 cinit CODE >1564:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+22 cinit CODE >1570:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+22 cinit CODE >1572:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
+23 cinit CODE >1573:C:\Users\Pablo\AppData\Local\Temp\xcAsmns.s
 4 intentry CODE >57:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\main.c
 7FB text26 CODE >72:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
 7FB text26 CODE >73:D:\Backup\Documentos\GitHub\ED2-Lab02\ED2-Lab02.X\setupUART.c
@@ -729,23 +729,23 @@ UART_mode_config@mode 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02
 __Hstrings 0 0 ABS 0 strings -
 _indicador 5D 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
 _ADIF 66 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+___sp 0 0 STACK 2 stack C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
 _cont 5E 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
 _main 4C 0 CODE 0 maintext dist/default/production\ED2-Lab02.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 _Lcd_Write_Char 1CA6 0 CODE 0 text16 dist/default/production\ED2-Lab02.X.production.o
-start 1C 0 CODE 0 init C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+start 1C 0 CODE 0 init C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
 Lcd_Port@a 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 ?___lmul 26 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __end_of_UART_RX_config 1D72 0 CODE 0 text14 dist/default/production\ED2-Lab02.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 ___awmod@sign 2C 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
 _setupINTOSC 92A 0 CODE 0 text1 dist/default/production\ED2-Lab02.X.production.o
 _UART_read_char FF6 0 CODE 0 text26 dist/default/production\ED2-Lab02.X.production.o
 ___aldiv@divisor 33 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
@@ -779,8 +779,8 @@ __end_of___lwdiv 2000 0 CODE 0 text8 dist/default/production\ED2-Lab02.X.product
 __end_of___lwmod 1EF8 0 CODE 0 text7 dist/default/production\ED2-Lab02.X.production.o
 __end_of_UART_read_char FFE 0 CODE 0 text26 dist/default/production\ED2-Lab02.X.production.o
 __end_of_ADC_read 1F74 0 CODE 0 text22 dist/default/production\ED2-Lab02.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
-___stacklo 0 0 ABS 0 - C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+___stackhi 0 0 ABS 0 - C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
+___stacklo 0 0 ABS 0 - C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
 _centesimas 5A 0 BANK0 1 bssBANK0 dist/default/production\ED2-Lab02.X.production.o
 _BAUDCTLbits 187 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 ___lwdiv@quotient 2B 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
@@ -800,7 +800,7 @@ _SPBRGH 9A 0 ABS 0 - dist/default/production\ED2-Lab02.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 mapeo@inmax 43 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 mapeo@inmin 42 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+___int_sp 0 0 STACK 2 stack C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
 mapeo@valor 4D 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
@@ -876,7 +876,7 @@ __Lintentry 8 0 CODE 0 intentry -
 __stringtab 1000 0 STRING 0 strings dist/default/production\ED2-Lab02.X.production.o
 Lcd_Write_String@a 2B 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
 Lcd_Write_String@i 29 0 BANK0 1 cstackBANK0 dist/default/production\ED2-Lab02.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Pablo\AppData\Local\Temp\xcAsmio.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Pablo\AppData\Local\Temp\xcAsmns.o
 __end_of___xxtofl 62E 0 CODE 0 text25 dist/default/production\ED2-Lab02.X.production.o
 __end_of_Lcd_Cmd 1D08 0 CODE 0 text20 dist/default/production\ED2-Lab02.X.production.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
